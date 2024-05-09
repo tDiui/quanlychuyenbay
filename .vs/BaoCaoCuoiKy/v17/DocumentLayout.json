@@ -3,27 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\chonghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\chonghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\dto\\quantridto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\dto\\quantridto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\dao\\quantridao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\dao\\quantridao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\bus\\quantribus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\bus\\quantribus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\chonghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\chonghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\bcck file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\bcck file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\chonsoluongve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\chonsoluongve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -43,19 +63,70 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TrangChu.cs",
-              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
-              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
-              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
-              "RelativeToolTip": "BaoCaoCuoiKy\\TrangChu.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAADgvzoAAAAMAAAA",
+              "Title": "ChonGhe.cs",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\ChonGhe.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\ChonGhe.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\ChonGhe.cs",
+              "RelativeToolTip": "BaoCaoCuoiKy\\ChonGhe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:21:48.64Z",
+              "WhenOpened": "2024-05-09T15:10:11.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "QuanTriDTO.cs",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DTO\\QuanTriDTO.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\DTO\\QuanTriDTO.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DTO\\QuanTriDTO.cs",
+              "RelativeToolTip": "BaoCaoCuoiKy\\DTO\\QuanTriDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T15:08:33.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanTriDAO.cs",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DAO\\QuanTriDAO.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\DAO\\QuanTriDAO.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DAO\\QuanTriDAO.cs",
+              "RelativeToolTip": "BaoCaoCuoiKy\\DAO\\QuanTriDAO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T15:01:10.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuanTriBUS.cs",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\BUS\\QuanTriBUS.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\BUS\\QuanTriBUS.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\BUS\\QuanTriBUS.cs",
+              "RelativeToolTip": "BaoCaoCuoiKy\\BUS\\QuanTriBUS.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T15:00:09.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\LoginForm.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:19:21.881Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "TrangChu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
@@ -67,7 +138,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "TrangChu.cs",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
+              "RelativeToolTip": "BaoCaoCuoiKy\\TrangChu.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC0AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:50:58.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "QuanTriForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\QuanTriForm.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\QuanTriForm.cs",
@@ -79,20 +163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BCCK file.txt",
-              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\BCCK file.txt",
-              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\BCCK file.txt",
-              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\BCCK file.txt",
-              "RelativeToolTip": "BaoCaoCuoiKy\\BCCK file.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-05-09T14:21:15.725Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "DatChuyenBay.cs [Design]",
               "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DatChuyenBay.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\DatChuyenBay.cs",
@@ -104,14 +175,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LoginForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\LoginForm.cs",
-              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\LoginForm.cs",
-              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\LoginForm.cs [Design]",
-              "RelativeToolTip": "BaoCaoCuoiKy\\LoginForm.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "ChonSoLuongVe.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\ChonSoLuongVe.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\ChonSoLuongVe.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\ChonSoLuongVe.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\ChonSoLuongVe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T14:19:21.881Z",
+              "WhenOpened": "2024-05-09T14:42:36.886Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChonGhe.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\ChonGhe.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\ChonGhe.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\ChonGhe.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\ChonGhe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:42:38.56Z",
               "EditorCaption": " [Design]"
             }
           ]
