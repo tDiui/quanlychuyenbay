@@ -15,9 +15,11 @@ namespace BaoCaoCuoiKy
     {
         static string connection_string = @"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
         SqlConnection conn = new SqlConnection(connection_string);
+        
         public QuanTriForm()
         {
             InitializeComponent();
+            conn.Open();
         }
 
         private void QuanTriForm_Load(object sender, EventArgs e)
@@ -125,8 +127,28 @@ namespace BaoCaoCuoiKy
             {
                 string qry = $"DELETE from ChuyenBay where IdChuyenBay = {IdChuyenBayBox.Text}";
                 SqlCommand cmd = new SqlCommand(qry, conn);
-                conn.Open();
                 cmd.ExecuteNonQuery();
+                ResetBtn_Click(sender, new EventArgs());
+                MessageBox.Show("Xóa chuyến bay thành công");
+
+            }
+
+
+            if(ThemChuyenBayLb.Visible.ToString() == "True")
+            {
+                
+                if(IdChuyenBayKhuHoiBox.Text == "Không")
+                {
+                    IdChuyenBayKhuHoiBox.Text = "NULL";
+                }
+                if(LaChuyenBayKhuHoiBox.Text == "Không")
+                {
+                    LaChuyenBayKhuHoiBox.Text ="0";
+                }
+                string qry = $"INSERT INTO ChuyenBay Values( {IdChuyenBayBox.Text}, '{NoiCatCanhBox.Text}', '{NoiHaCanhBox.Text}', '{TGKhoiHanhBox.Text}', '{TGDenNoiBox.Text}', {GiaVeBox.Text}, {TongChoNgoiBox.Text}, {IdChuyenBayKhuHoiBox.Text}, {LaChuyenBayKhuHoiBox.Text})";
+                SqlCommand cmd = new SqlCommand(qry, conn);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("thêm chuyến bay thành công");
             }
         }
 

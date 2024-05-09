@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\bcck file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\bcck file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\users\\h\u00E0 \u0111\u0103ng khoa\\onedrive\\ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TrangChu.cs",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
+              "RelativeToolTip": "BaoCaoCuoiKy\\TrangChu.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAADgvzoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:21:48.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TrangChu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\TrangChu.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\TrangChu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:21:44.834Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QuanTriForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\QuanTriForm.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\QuanTriForm.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\QuanTriForm.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\QuanTriForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:21:17.647Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BCCK file.txt",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\BCCK file.txt",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\BCCK file.txt",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\BCCK file.txt",
+              "RelativeToolTip": "BaoCaoCuoiKy\\BCCK file.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-09T14:21:15.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatChuyenBay.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DatChuyenBay.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\DatChuyenBay.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\DatChuyenBay.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\DatChuyenBay.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:20:13.691Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\LoginForm.cs",
+              "RelativeDocumentMoniker": "BaoCaoCuoiKy\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\H\u00E0 \u0110\u0103ng Khoa\\OneDrive\\Ta\u0300i li\u00EA\u0323u\\quanlychuyenbay\\BaoCaoCuoiKy\\LoginForm.cs [Design]",
+              "RelativeToolTip": "BaoCaoCuoiKy\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:19:21.881Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

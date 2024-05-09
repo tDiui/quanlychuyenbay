@@ -28,31 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            dataGridView1 = new DataGridView();
+            IdChuyenBayBox = new DataGridViewTextBoxColumn();
+            NoiKhoiHanhBox = new DataGridViewTextBoxColumn();
+            NoiHaCanhBox = new DataGridViewTextBoxColumn();
+            TGKhoiHanhBox = new DataGridViewTextBoxColumn();
+            TGVeBox = new DataGridViewTextBoxColumn();
+            GiaVeBox = new DataGridViewTextBoxColumn();
+            TongChoNgoiBox = new DataGridViewTextBoxColumn();
+            IdChuyenBayKhuHoiBox = new DataGridViewTextBoxColumn();
+            LaChuyenBayKhuHoiBox = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
-            // button1
+            // dataGridView1
             // 
-            button1.Location = new Point(104, 43);
-            button1.Name = "button1";
-            button1.Size = new Size(413, 203);
-            button1.TabIndex = 0;
-            button1.Text = "Test button";
-            button1.UseVisualStyleBackColor = true;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { IdChuyenBayBox, NoiKhoiHanhBox, NoiHaCanhBox, TGKhoiHanhBox, TGVeBox, GiaVeBox, TongChoNgoiBox, IdChuyenBayKhuHoiBox, LaChuyenBayKhuHoiBox });
+            dataGridView1.Location = new Point(-2, -3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1187, 125);
+            dataGridView1.TabIndex = 1;
             // 
-            // Test
+            // IdChuyenBayBox
+            // 
+            IdChuyenBayBox.HeaderText = "Id chuyến bay";
+            IdChuyenBayBox.MinimumWidth = 6;
+            IdChuyenBayBox.Name = "IdChuyenBayBox";
+            IdChuyenBayBox.Width = 125;
+            // 
+            // NoiKhoiHanhBox
+            // 
+            NoiKhoiHanhBox.HeaderText = "Nơi khởi hành";
+            NoiKhoiHanhBox.MinimumWidth = 6;
+            NoiKhoiHanhBox.Name = "NoiKhoiHanhBox";
+            NoiKhoiHanhBox.Width = 125;
+            // 
+            // NoiHaCanhBox
+            // 
+            NoiHaCanhBox.HeaderText = "Nơi hạ cánh";
+            NoiHaCanhBox.MinimumWidth = 6;
+            NoiHaCanhBox.Name = "NoiHaCanhBox";
+            NoiHaCanhBox.Width = 125;
+            // 
+            // TGKhoiHanhBox
+            // 
+            TGKhoiHanhBox.HeaderText = "Thời gian khởi hành";
+            TGKhoiHanhBox.MinimumWidth = 6;
+            TGKhoiHanhBox.Name = "TGKhoiHanhBox";
+            TGKhoiHanhBox.Width = 125;
+            // 
+            // TGVeBox
+            // 
+            TGVeBox.HeaderText = "Thời gian về";
+            TGVeBox.MinimumWidth = 6;
+            TGVeBox.Name = "TGVeBox";
+            TGVeBox.Width = 125;
+            // 
+            // GiaVeBox
+            // 
+            GiaVeBox.HeaderText = "Giá vé";
+            GiaVeBox.MinimumWidth = 6;
+            GiaVeBox.Name = "GiaVeBox";
+            GiaVeBox.Width = 125;
+            // 
+            // TongChoNgoiBox
+            // 
+            TongChoNgoiBox.HeaderText = "Tổng chỗ ngồi";
+            TongChoNgoiBox.MinimumWidth = 6;
+            TongChoNgoiBox.Name = "TongChoNgoiBox";
+            TongChoNgoiBox.Width = 125;
+            // 
+            // IdChuyenBayKhuHoiBox
+            // 
+            IdChuyenBayKhuHoiBox.HeaderText = "Id chuyến bay khứ hồi";
+            IdChuyenBayKhuHoiBox.MinimumWidth = 6;
+            IdChuyenBayKhuHoiBox.Name = "IdChuyenBayKhuHoiBox";
+            IdChuyenBayKhuHoiBox.Width = 125;
+            // 
+            // LaChuyenBayKhuHoiBox
+            // 
+            LaChuyenBayKhuHoiBox.HeaderText = "Là chuyến bay khứ hồi";
+            LaChuyenBayKhuHoiBox.MinimumWidth = 6;
+            LaChuyenBayKhuHoiBox.Name = "LaChuyenBayKhuHoiBox";
+            LaChuyenBayKhuHoiBox.Width = 125;
+            // 
+            // NewName
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Name = "Test";
+            ClientSize = new Size(1188, 771);
+            Controls.Add(dataGridView1);
+            Name = "NewName";
             Text = "Test";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button button1;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn IdChuyenBayBox;
+        private DataGridViewTextBoxColumn NoiKhoiHanhBox;
+        private DataGridViewTextBoxColumn NoiHaCanhBox;
+        private DataGridViewTextBoxColumn TGKhoiHanhBox;
+        private DataGridViewTextBoxColumn TGVeBox;
+        private DataGridViewTextBoxColumn GiaVeBox;
+        private DataGridViewTextBoxColumn TongChoNgoiBox;
+        private DataGridViewTextBoxColumn IdChuyenBayKhuHoiBox;
+        private DataGridViewTextBoxColumn LaChuyenBayKhuHoiBox;
     }
 }
