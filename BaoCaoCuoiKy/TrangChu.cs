@@ -8,13 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace BaoCaoCuoiKy
 {
     public partial class TrangChu : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
+        QuanTriDTO quanTriDTO = new QuanTriDTO();
+        QuanTriBUS quanTriBUS = new QuanTriBUS();
+        //SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
         public TrangChu()
         {
             InitializeComponent();
@@ -25,15 +28,18 @@ namespace BaoCaoCuoiKy
             MatKhauBox.PasswordChar = '*';
         }
 
+        private void getData()
+        {
+            quanTriDTO.TaiKhoan = TaiKhoanBox.Text;
+            quanTriDTO.MatKhau = MatKhauBox.Text;
+            quanTriBUS.info = quanTriDTO;
+        }
+
         private void DangNhapBtn_Click(object sender, EventArgs e)
         {
-            string query = $"select MaNV from QuanTri where TaiKhoan = '{TaiKhoanBox.Text}' AND MatKhau = '{MatKhauBox.Text}'";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-            DataTable data = new DataTable();
-            adapter.Fill(data);
+            getData();
             QuanTriForm qtf = new QuanTriForm();
-            if (data.Rows.Count <= 0)
+            if (!quanTriBUS.DangNhap())
             {
                 MessageBox.Show("Tài khoản hoặc mật khẩu không đúng");
                 TaiKhoanBox.Clear();
@@ -45,7 +51,7 @@ namespace BaoCaoCuoiKy
                 this.Hide();
                 qtf.FormBorderStyle = FormBorderStyle.FixedDialog;
             }
-            qtf.Closed += ShowTrangChu;
+            qtf.Closed += ShowTrangChu; 
         }
 
         private void ShowTrangChu(object sender, EventArgs e)

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,14 +15,25 @@ namespace BaoCaoCuoiKy
         //Chứa thông tin của 1 học sinh
         public QuanTriDTO info;
 
-        public DataTable getDSHocSinh()
+        public bool DangNhap()
+        {
+            DataTable dt = new DataTable();
+            dt = data.DangNhap(info.TaiKhoan, info.MatKhau);
+            if(dt.Rows.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public DataTable getDSQuanTri()
         {
             return data.getDSQuanTri();
         }
-        public DataTable getDSHocSinh(string sMalop)
-        {
-            return data.getDSQuanTri(sMalop);
-        }
+
         public bool insert()
         {
             try
@@ -52,7 +64,7 @@ namespace BaoCaoCuoiKy
         {
             try
             {
-                data.delete(info.MaNv);
+                data.delete(info.MaNV);
                 return true;
             }
             catch (Exception ex)
