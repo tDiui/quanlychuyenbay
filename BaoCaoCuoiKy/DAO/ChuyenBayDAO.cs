@@ -37,5 +37,19 @@ namespace BaoCaoCuoiKy
             string query = $"DELETE FROM QuanTri WHERE MaNV = {IdChuyenBay}";
             data.executeNonQuery(query);
         }
+
+        public DataTable getListDiemDi()
+        {
+            string query = "SELECT NoiKhoiHanh FROM ChuyenBay GROUP BY NoiKhoiHanh";
+            DataTable dt = data.executeQuery(query);
+            return dt;
+        }
+
+        public DataTable getListDiemDen()
+        {
+            string query = "SELECT NoiHaCanh FROM ChuyenBay GROUP BY NoiHaCanh";
+            DataTable dt = data.executeQuery(query);
+            return dt;
+        }
     }
 }
