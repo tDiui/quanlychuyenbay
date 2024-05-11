@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\chonsoluongve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\quanlychuyenbay\\baocaocuoiky\\baocaocuoiky\\chonsoluongve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\chonsoluongve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,11 +23,7 @@
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\trangchu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|c:\\quanlychuyenbay\\baocaocuoiky\\baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\datchuyenbay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\quantriform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|solutionrelative:baocaocuoiky\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0299C6BA-E10E-4EB1-AF0E-7B9A0C95C35B}|BaoCaoCuoiKy\\BaoCaoCuoiKy.csproj|C:\\quanlychuyenbay\\BaoCaoCuoiKy\\baocaocuoiky\\chonghe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -58,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TrangChu.cs",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\TrangChu.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
@@ -84,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "QuanTriForm.cs",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\QuanTriForm.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\QuanTriForm.cs",
@@ -92,12 +92,11 @@
               "RelativeToolTip": "BaoCaoCuoiKy\\QuanTriForm.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAkAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T10:24:28.778Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T10:24:28.778Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ChonSoLuongVe.cs",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\ChonSoLuongVe.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\ChonSoLuongVe.cs",
@@ -110,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ChonSoLuongVe.cs [Design]",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\ChonSoLuongVe.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\ChonSoLuongVe.cs",
@@ -133,19 +132,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "QuanTriForm.cs [Design]",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\QuanTriForm.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\QuanTriForm.cs",
               "ToolTip": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\QuanTriForm.cs [Design]",
               "RelativeToolTip": "BaoCaoCuoiKy\\QuanTriForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T10:24:20.571Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-05T10:24:20.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "TrangChu.cs [Design]",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\TrangChu.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\TrangChu.cs",
@@ -157,19 +155,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DatChuyenBay.cs [Design]",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\DatChuyenBay.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\DatChuyenBay.cs",
               "ToolTip": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\DatChuyenBay.cs [Design]",
               "RelativeToolTip": "BaoCaoCuoiKy\\DatChuyenBay.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:12:17.972Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-05T09:12:17.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DatChuyenBay.cs",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\DatChuyenBay.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\DatChuyenBay.cs",
@@ -177,8 +174,7 @@
               "RelativeToolTip": "BaoCaoCuoiKy\\DatChuyenBay.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:49:39.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T07:49:39.249Z"
             },
             {
               "$type": "Document",
@@ -205,14 +201,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\LoginForm.cs",
               "RelativeDocumentMoniker": "BaoCaoCuoiKy\\LoginForm.cs",
               "ToolTip": "C:\\quanlychuyenbay\\BaoCaoCuoiKy\\BaoCaoCuoiKy\\LoginForm.cs [Design]",
               "RelativeToolTip": "BaoCaoCuoiKy\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T07:26:42.352Z"
+              "WhenOpened": "2024-05-05T07:26:42.352Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

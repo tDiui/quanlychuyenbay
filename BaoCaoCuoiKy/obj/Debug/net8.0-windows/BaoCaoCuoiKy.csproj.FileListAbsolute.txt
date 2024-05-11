@@ -1,0 +1,93 @@
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.exe
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.deps.json
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.runtimeconfig.json
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.AssemblyReference.cache
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.GenerateResource.cache
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.AssemblyInfoInputs.cache
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.AssemblyInfo.cs
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.CoreCompileInputs.cache
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCu.546DA60F.Up2Date
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\refint\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.genruntimeconfig.cache
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\ref\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.LoginForm.resources
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.Properties.Resources.resources
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.NewName.resources
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.TrangChu.resources
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.QuanTriForm.resources
+C:\Users\Hà Đăng Khoa\source\repos\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.DatChuyenBay.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.exe
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.deps.json
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.runtimeconfig.json
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.AssemblyReference.cache
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.DatChuyenBay.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.LoginForm.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.NewName.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.Properties.Resources.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.QuanTriForm.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.TrangChu.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.GenerateResource.cache
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.AssemblyInfoInputs.cache
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.AssemblyInfo.cs
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.CoreCompileInputs.cache
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCu.546DA60F.Up2Date
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\refint\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.genruntimeconfig.cache
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\ref\BaoCaoCuoiKy.dll
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.ChonGhe.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.ChonSoLuongVe.resources
+C:\Users\Hà Đăng Khoa\Downloads\BaoCaoCuoiKy\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.ThongTinKH.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.exe
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.deps.json
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.runtimeconfig.json
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\bin\Debug\net8.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.AssemblyReference.cache
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.ChonGhe.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.ChonSoLuongVe.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.DatChuyenBay.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.LoginForm.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.NewName.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.Properties.Resources.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.QuanTriForm.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.ThongTinKH.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.TrangChu.resources
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.GenerateResource.cache
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.GeneratedMSBuildEditorConfig.editorconfig
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.AssemblyInfoInputs.cache
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.AssemblyInfo.cs
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.csproj.CoreCompileInputs.cache
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCu.546DA60F.Up2Date
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\refint\BaoCaoCuoiKy.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.genruntimeconfig.cache
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\ref\BaoCaoCuoiKy.dll
