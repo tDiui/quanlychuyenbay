@@ -51,7 +51,7 @@ namespace BaoCaoCuoiKy
                 this.Hide();
                 qtf.FormBorderStyle = FormBorderStyle.FixedDialog;
             }
-            qtf.Closed += ShowTrangChu; 
+            qtf.Closed += ShowTrangChu;
         }
 
         private void ShowTrangChu(object sender, EventArgs e)
@@ -60,11 +60,7 @@ namespace BaoCaoCuoiKy
         }
 
         //Chỉ edit chô này thôi nha
-        private void DatChuyenBayBtn_Click(object sender, EventArgs e)
-        {
-            DatChuyenBay datChuyenBay = new DatChuyenBay();
-            datChuyenBay.Show();
-        }
+
 
         //bên dưới này để nguyên
 
@@ -79,6 +75,11 @@ namespace BaoCaoCuoiKy
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

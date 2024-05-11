@@ -38,7 +38,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.maybay;
+            pictureBox1.Image = Properties.Resources.hinh_anh_bay_tren_troi_la_may_bay_111631532;
             pictureBox1.Location = new Point(3, 82);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(617, 276);
