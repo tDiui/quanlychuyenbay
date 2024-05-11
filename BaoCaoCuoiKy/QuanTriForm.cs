@@ -15,6 +15,8 @@ namespace BaoCaoCuoiKy
     {
         static string connection_string = @"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
         SqlConnection conn = new SqlConnection(connection_string);
+        ChuyenBayDTO chuyenBayDTO = new ChuyenBayDTO();
+        ChuyenBayBUS chuyenBayBUS = new ChuyenBayBUS();
         
         public QuanTriForm()
         {
@@ -40,6 +42,18 @@ namespace BaoCaoCuoiKy
             TimChuyenBayLb.Hide();
         }
 
+        private void getData()
+        {
+            chuyenBayDTO.IdChuyenBay = int.Parse(IdChuyenBayBox.Text);
+            chuyenBayDTO.NoiKhoiHanh = NoiCatCanhBox.Text;
+            chuyenBayDTO.NoiHaCanh = NoiHaCanhBox.Text;
+            chuyenBayDTO.TGKhoiHanh = DateTime.Parse(TGKhoiHanhBox.Text);
+            chuyenBayDTO.TGDen = DateTime.Parse(TGDenNoiBox.Text);
+            chuyenBayDTO.GiaVe = float.Parse(GiaVeBox.Text);
+            chuyenBayDTO.TongChoNgoi = int.Parse(TongChoNgoiBox.Text);
+            chuyenBayDTO.IdChuyenBayKhuHoi = int.Parse(IdChuyenBayKhuHoiBox.Text);
+            chuyenBayDTO.KhuHoi = bool.Parse(LaChuyenBayKhuHoiBox.Text);
+        }
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             IdChuyenBayBox.Clear();
@@ -52,6 +66,20 @@ namespace BaoCaoCuoiKy
             IdChuyenBayKhuHoiBox.Clear();
             LaChuyenBayKhuHoiBox.Clear();
         }
+
+        private void ClockTextBox()
+        {
+            //IdChuyenBayBox.ReadOnly = true;
+            NoiCatCanhBox.ReadOnly = true;
+            NoiHaCanhBox.ReadOnly = true;
+            TGKhoiHanhBox.ReadOnly = true;
+            TGDenNoiBox.ReadOnly = true;
+            GiaVeBox.ReadOnly = true;
+            TongChoNgoiBox.ReadOnly = true;
+            IdChuyenBayKhuHoiBox.ReadOnly = true;
+            LaChuyenBayKhuHoiBox.ReadOnly = true;
+        }
+
 
         private void ThemChuyenBayBtn_Click(object sender, EventArgs e)
         {
@@ -69,6 +97,7 @@ namespace BaoCaoCuoiKy
             ThemChuyenBayLb.Hide();
             TimChuyenBayLb.Hide();
             XoaChuyenBayLb.Show();
+            ClockTextBox();
 
         }
 
@@ -78,12 +107,17 @@ namespace BaoCaoCuoiKy
             ThemChuyenBayLb.Hide();
             XoaChuyenBayLb.Hide();
             TimChuyenBayLb.Show();
+            ClockTextBox();
         }
+
 
         private void TimChuyenBay_Click(object sender, EventArgs e)
         {
             if (TimChuyenBayLb.Visible.ToString() == "True" || XoaChuyenBayLb.Visible.ToString() == "True" || ThemChuyenBayLb.Visible.ToString() == "True")
             {
+                getData();
+
+
                 string IdChuyenBay;
                 IdChuyenBay = IdChuyenBayBox.Text;
                 string query = $"Select * from ChuyenBay where IdChuyenBay = '{IdChuyenBay}'";
@@ -104,19 +138,6 @@ namespace BaoCaoCuoiKy
                 GiaVeBox.Text = dataTable.Rows[0][5].ToString();
                 TongChoNgoiBox.Text = dataTable.Rows[0][6].ToString();
                 IdChuyenBayKhuHoiBox.Text = dataTable.Rows[0][7].ToString();
-                if (IdChuyenBayKhuHoiBox.Text == "")
-                {
-                    IdChuyenBayKhuHoiBox.Text = "Không";
-                }
-                LaChuyenBayKhuHoiBox.Text = dataTable.Rows[0][8].ToString();
-                if (LaChuyenBayKhuHoiBox.Text == "True")
-                {
-                    LaChuyenBayKhuHoiBox.Text = "Là chuyến bay khứ hồi";
-                }
-                else
-                {
-                    LaChuyenBayKhuHoiBox.Text = "Không là chuyến bay khứ hồi";
-                }
 
             }
         }
@@ -136,15 +157,6 @@ namespace BaoCaoCuoiKy
 
             if(ThemChuyenBayLb.Visible.ToString() == "True")
             {
-                
-                if(IdChuyenBayKhuHoiBox.Text == "Không")
-                {
-                    IdChuyenBayKhuHoiBox.Text = "NULL";
-                }
-                if(LaChuyenBayKhuHoiBox.Text == "Không")
-                {
-                    LaChuyenBayKhuHoiBox.Text ="0";
-                }
                 string qry = $"INSERT INTO ChuyenBay Values( {IdChuyenBayBox.Text}, '{NoiCatCanhBox.Text}', '{NoiHaCanhBox.Text}', '{TGKhoiHanhBox.Text}', '{TGDenNoiBox.Text}', {GiaVeBox.Text}, {TongChoNgoiBox.Text}, {IdChuyenBayKhuHoiBox.Text}, {LaChuyenBayKhuHoiBox.Text})";
                 SqlCommand cmd = new SqlCommand(qry, conn);
                 cmd.ExecuteNonQuery();

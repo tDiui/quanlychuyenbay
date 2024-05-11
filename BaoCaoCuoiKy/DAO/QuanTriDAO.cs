@@ -10,8 +10,6 @@ namespace BaoCaoCuoiKy
 {
     internal class QuanTriDAO
     {
-        String connection_string = "";
-        SqlConnection conn;
         DataTable dt;
         DataProvider data = new DataProvider();
 
