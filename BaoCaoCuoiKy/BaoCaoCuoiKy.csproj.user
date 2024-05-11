@@ -10,7 +10,7 @@
     <Compile Update="DatChuyenBay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Đangky.cs">
+    <Compile Update="Dangky.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="LoginForm.cs">

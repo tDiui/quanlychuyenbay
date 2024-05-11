@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label2 = new Label();
             label1 = new Label();
             MatKhauBox = new TextBox();
@@ -35,9 +36,10 @@
             ThoatBtn = new Button();
             DatChuyenBayBtn = new Button();
             DangNhapBtn = new Button();
-            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            timer1 = new System.Windows.Forms.Timer(components);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label2
@@ -109,16 +111,16 @@
             DangNhapBtn.UseVisualStyleBackColor = true;
             DangNhapBtn.Click += DangNhapBtn_Click;
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            pictureBox2.Image = Properties.Resources.hinh_anh_may_bay_phan_luc;
-            pictureBox2.Location = new Point(-3, 1);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(803, 449);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 6;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(-3, 1);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(803, 449);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox2_Click;
             // 
             // button1
             // 
@@ -129,6 +131,7 @@
             button1.TabIndex = 7;
             button1.Text = "Đăng kí";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // TrangChu
             // 
@@ -144,12 +147,12 @@
             Controls.Add(DangNhapBtn);
             Controls.Add(label1);
             Controls.Add(TaiKhoanBox);
-            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             MaximizeBox = false;
             Name = "TrangChu";
             Text = "Đăng nhập hệ thống";
             Load += RegisterForm_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -162,7 +165,8 @@
         private Label label1;
         private TextBox MatKhauBox;
         private TextBox TaiKhoanBox;
-        private PictureBox pictureBox2;
+        private PictureBox pictureBox1;
         private Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
