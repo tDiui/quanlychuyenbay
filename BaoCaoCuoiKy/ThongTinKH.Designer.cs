@@ -36,40 +36,43 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(40, 28);
+            label1.Location = new Point(207, 9);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(193, 15);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Khong co khach hang nao o day ca";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(40, 67);
+            label2.Location = new Point(12, 41);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(89, 15);
             label2.TabIndex = 0;
-            label2.Text = "label1";
+            label2.Text = "ten khach hang";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(40, 116);
+            label3.Location = new Point(12, 70);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(30, 15);
             label3.TabIndex = 0;
-            label3.Text = "label1";
+            label3.Text = "Tuoi";
+            label3.Click += label3_Click;
             // 
             // ThongTinKH
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "ThongTinKH";
             Text = "ThongTinKH";
+            Load += ThongTinKH_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -15,7 +15,7 @@ namespace BaoCaoCuoiKy
     {
         static string connection_string = @"Data Source=DESKTOP-JOQJAEU;Initial Catalog=qlSanBay;Integrated Security=True;";
         SqlConnection conn = new SqlConnection(connection_string);
-        
+
         public QuanTriForm()
         {
             InitializeComponent();
@@ -38,7 +38,9 @@ namespace BaoCaoCuoiKy
             XoaChuyenBayLb.Hide();
             ThemChuyenBayLb.Show();
             TimChuyenBayLb.Hide();
+
         }
+
 
         private void ResetBtn_Click(object sender, EventArgs e)
         {
@@ -134,16 +136,16 @@ namespace BaoCaoCuoiKy
             }
 
 
-            if(ThemChuyenBayLb.Visible.ToString() == "True")
+            if (ThemChuyenBayLb.Visible.ToString() == "True")
             {
-                
-                if(IdChuyenBayKhuHoiBox.Text == "Không")
+
+                if (IdChuyenBayKhuHoiBox.Text == "Không")
                 {
                     IdChuyenBayKhuHoiBox.Text = "NULL";
                 }
-                if(LaChuyenBayKhuHoiBox.Text == "Không")
+                if (LaChuyenBayKhuHoiBox.Text == "Không")
                 {
-                    LaChuyenBayKhuHoiBox.Text ="0";
+                    LaChuyenBayKhuHoiBox.Text = "0";
                 }
                 string qry = $"INSERT INTO ChuyenBay Values( {IdChuyenBayBox.Text}, '{NoiCatCanhBox.Text}', '{NoiHaCanhBox.Text}', '{TGKhoiHanhBox.Text}', '{TGDenNoiBox.Text}', {GiaVeBox.Text}, {TongChoNgoiBox.Text}, {IdChuyenBayKhuHoiBox.Text}, {LaChuyenBayKhuHoiBox.Text})";
                 SqlCommand cmd = new SqlCommand(qry, conn);
@@ -155,6 +157,15 @@ namespace BaoCaoCuoiKy
         private void ThoatBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void thongtinKHbtn_Click(object sender, EventArgs e)
+        {
+            // Tạo một thể hiện của form ThongTinKhachHangForm
+            ThongTinKH thongTinKhachHangForm = new ThongTinKH();
+
+            // Hiển thị form ThongTinKhachHangForm
+            thongTinKhachHangForm.Show();
         }
     }
 }
