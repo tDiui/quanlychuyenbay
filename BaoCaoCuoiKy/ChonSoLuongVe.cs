@@ -32,9 +32,9 @@ namespace BaoCaoCuoiKy
             SoLuongVe = int.Parse(SoLuongVeBox.Text);
             LoaiVe = LoaiVeBox.Text;
             string query = $"select count(IdChuyenBay) as SoLuongVe from GheNgoi WHERE TinhTrangDat = '0' AND LoaiGhe = '{LoaiVe}' AND IdChuyenBay = {IdChuyenBay}";
-            string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-JOQJAEU;Initial Catalog=qlSanBay;Integrated Security=True";
 
-            
+
             // Create a connection to the database
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -58,7 +58,7 @@ namespace BaoCaoCuoiKy
                             }
                             else
                             {
-                                MessageBox.Show("Nhập không chính xác vui lòng nhập lại");                            
+                                MessageBox.Show("Nhập không chính xác vui lòng nhập lại");
                             }
                         }
                     }
@@ -69,7 +69,7 @@ namespace BaoCaoCuoiKy
                     }
                 }
             }
-            if(SoLuongVe <= SoLuongVeThuc)
+            if (SoLuongVe <= SoLuongVeThuc)
             {
                 ChonGhe chonGhe = new ChonGhe();
                 chonGhe.GetMaChuyenBay(IdChuyenBay, LoaiVe, SoLuongVe);
@@ -77,7 +77,7 @@ namespace BaoCaoCuoiKy
                 this.Hide();
                 chonGhe.Closed += DongForm;
             }
-            else 
+            else
             {
                 MessageBox.Show("Số lượng vé không đủ vui lòng nhập lại");
                 SoLuongVeBox.Clear();
@@ -88,6 +88,11 @@ namespace BaoCaoCuoiKy
         private void DongForm(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ChonSoLuongVe_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

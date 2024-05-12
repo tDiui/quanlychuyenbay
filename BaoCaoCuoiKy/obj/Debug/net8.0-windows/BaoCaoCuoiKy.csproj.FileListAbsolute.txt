@@ -91,3 +91,4 @@ C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\refint\Bao
 C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.pdb
 C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.genruntimeconfig.cache
 C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\ref\BaoCaoCuoiKy.dll
+C:\quanlychuyenbay\BaoCaoCuoiKy\BaoCaoCuoiKy\obj\Debug\net8.0-windows\BaoCaoCuoiKy.sourcelink.json
