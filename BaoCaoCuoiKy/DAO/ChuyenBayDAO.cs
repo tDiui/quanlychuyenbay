@@ -16,8 +16,7 @@ namespace BaoCaoCuoiKy
         public DataTable getDSChuyenBay()
         {
             String query = "select * from ChuyenBay";
-            DataTable dt = data.executeQuery(query);
-            return dt;
+            return data.executeQuery(query);
         }
 
         public void insert(int IdChuyenBay, string NoiKhoiHanh, string NoiHaCanh, DateTime TGKhoiHanh, DateTime TGDen, float GiaVe, int TongChoNgoi, int IdChuyenBayKhuHoi, bool KhuHoi)

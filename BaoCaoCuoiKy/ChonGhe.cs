@@ -13,11 +13,12 @@ namespace BaoCaoCuoiKy
 {
     public partial class ChonGhe : Form
     {
-        string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True;MultipleActiveResultSets=True;";
+        //string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True;MultipleActiveResultSets=True;";
         int IdMaChuyenBay, SoLuongVe, IdMaGheChuyenBay;
         int IdKhachHang;
         string LoaiGheChon;
         string SoTaiKhoan, MatKhau;
+        string connectionString = "";
         public ChonGhe()
         {
             InitializeComponent();
@@ -32,7 +33,6 @@ namespace BaoCaoCuoiKy
 
         private void ChonGhe_Load(object sender, EventArgs e)
         {
-
 
             // SQL query to select records from a table
             string query = $"select * from GheNgoi WHERE TinhTrangDat = '0' AND LoaiGhe = '{LoaiGheChon}' AND IdChuyenBay = {IdMaChuyenBay}";

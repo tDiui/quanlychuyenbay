@@ -17,44 +17,45 @@ namespace BaoCaoCuoiKy
         SqlConnection conn = new SqlConnection(connection_string);
         ChuyenBayDTO chuyenBayDTO = new ChuyenBayDTO();
         ChuyenBayBUS chuyenBayBUS = new ChuyenBayBUS();
-        
+
         public QuanTriForm()
         {
             InitializeComponent();
             conn.Open();
         }
 
-        private void QuanTriForm_Load(object sender, EventArgs e)
+        public void DinhDangLuoi()
         {
-            ThemChuyenBayPanel.Show();
-            TimChuyenBay.Show();
-            IdChuyenBayBox.TabIndex = 0;
-            NoiCatCanhBox.TabIndex = 1;
-            NoiHaCanhBox.TabIndex = 2;
-            TGKhoiHanhBox.TabIndex = 3;
-            TGDenNoiBox.TabIndex = 4;
-            GiaVeBox.TabIndex = 5;
-            TongChoNgoiBox.TabIndex = 6;
-            IdChuyenBayKhuHoiBox.TabIndex = 7;
-            LaChuyenBayKhuHoiBox.TabIndex = 8;
-            XoaChuyenBayLb.Hide();
-            ThemChuyenBayLb.Show();
-            TimChuyenBayLb.Hide();
+            Grid1.Columns[0].HeaderText = "Id Chuyen bay";
+            Grid1.Columns[0].Width = 130;
+            Grid1.Columns[1].HeaderText = "Noi Khoi Hanh";
+            Grid1.Columns[1].Width = 100;
+            Grid1.Columns[2].HeaderText = "Noi Ha Canh";
+            Grid1.Columns[2].Width = 100;
+            Grid1.Columns[3].HeaderText = "Thoi Gian Khoi Hanh";
+            Grid1.Columns[3].Width = 160;
+            Grid1.Columns[4].HeaderText = "Thoi Gian Den";
+            Grid1.Columns[4].Width = 160;
+            Grid1.Columns[5].HeaderText = "Gia Ve";
+            Grid1.Columns[5].Width = 200;
+            Grid1.Columns[6].HeaderText = "Tong Cho Ngoi";
+            Grid1.Columns[6].Width = 170;
+            Grid1.Columns[7].HeaderText = "Id Chuyen Bay Khu Hoi";
+            Grid1.Columns[7].Width = 130;
+            Grid1.Columns[8].HeaderText = "Khu Hoi";
+            Grid1.Columns[8].Width = 90;
         }
 
-        private void getData()
+        private void QuanTriForm_Load(object sender, EventArgs e)
         {
-            chuyenBayDTO.IdChuyenBay = int.Parse(IdChuyenBayBox.Text);
-            chuyenBayDTO.NoiKhoiHanh = NoiCatCanhBox.Text;
-            chuyenBayDTO.NoiHaCanh = NoiHaCanhBox.Text;
-            chuyenBayDTO.TGKhoiHanh = DateTime.Parse(TGKhoiHanhBox.Text);
-            chuyenBayDTO.TGDen = DateTime.Parse(TGDenNoiBox.Text);
-            chuyenBayDTO.GiaVe = float.Parse(GiaVeBox.Text);
-            chuyenBayDTO.TongChoNgoi = int.Parse(TongChoNgoiBox.Text);
-            chuyenBayDTO.IdChuyenBayKhuHoi = int.Parse(IdChuyenBayKhuHoiBox.Text);
-            chuyenBayDTO.KhuHoi = bool.Parse(LaChuyenBayKhuHoiBox.Text);
+
+            DataTable dt = chuyenBayBUS.getDSChuyenBay();
+            Grid1.DataSource = dt;
+            DinhDangLuoi();
         }
-        private void ResetBtn_Click(object sender, EventArgs e)
+
+        /*
+         private void ResetBtn_Click(object sender, EventArgs e)
         {
             IdChuyenBayBox.Clear();
             NoiCatCanhBox.Clear();
@@ -155,7 +156,7 @@ namespace BaoCaoCuoiKy
             }
 
 
-            if(ThemChuyenBayLb.Visible.ToString() == "True")
+            if (ThemChuyenBayLb.Visible.ToString() == "True")
             {
                 string qry = $"INSERT INTO ChuyenBay Values( {IdChuyenBayBox.Text}, '{NoiCatCanhBox.Text}', '{NoiHaCanhBox.Text}', '{TGKhoiHanhBox.Text}', '{TGDenNoiBox.Text}', {GiaVeBox.Text}, {TongChoNgoiBox.Text}, {IdChuyenBayKhuHoiBox.Text}, {LaChuyenBayKhuHoiBox.Text})";
                 SqlCommand cmd = new SqlCommand(qry, conn);
@@ -167,6 +168,18 @@ namespace BaoCaoCuoiKy
         private void ThoatBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+         */
+
+
+        private void Grid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ThemChuyenBayBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
