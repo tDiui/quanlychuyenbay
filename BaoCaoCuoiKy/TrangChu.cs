@@ -16,7 +16,8 @@ namespace BaoCaoCuoiKy
     public partial class TrangChu : Form
     {
         private int currentImageIndex = 0;
-        private string[] imagePaths = { @"C:\Users\Admin\Downloads\quanlychuyenbay\BaoCaoCuoiKy\Resources\anh-may-bay-dang-bay.jpg", @"C:\Users\Admin\Downloads\quanlychuyenbay\BaoCaoCuoiKy\Resources\hinh-anh-bay-tren-troi-la-may-bay_111631532.jpg", @"C:\Users\Admin\Downloads\quanlychuyenbay\BaoCaoCuoiKy\Resources\anh-may-bay-dep_041752800.jpg", @"C:\Users\Admin\Downloads\quanlychuyenbay\BaoCaoCuoiKy\Resources\hinh-anh-may-bay-phan-luc.jpg" };
+        static string path = Application.StartupPath + "../../../"; //không thay đổi cái path này nhaaa
+        private string[] imagePaths = { @$"{path}\Resources\anh-may-bay-dang-bay.jpg", @$"{path}\Resources\hinh-anh-bay-tren-troi-la-may-bay_111631532.jpg", @$"{path}\Resources\anh-may-bay-dep_041752800.jpg", @$"{path}\Resources\hinh-anh-may-bay-phan-luc.jpg" };
         QuanTriDTO quanTriDTO = new QuanTriDTO();
         QuanTriBUS quanTriBUS = new QuanTriBUS();
         //SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
@@ -39,9 +40,7 @@ namespace BaoCaoCuoiKy
         {
             // Đặt ảnh ban đầu
             pictureBox1.ImageLocation = imagePaths[currentImageIndex];
-        }
-        private void RegisterForm_Load(object sender, EventArgs e)
-        {
+            this.ControlBox = false;
             MatKhauBox.PasswordChar = '*';
         }
 

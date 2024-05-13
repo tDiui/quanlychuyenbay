@@ -47,16 +47,17 @@
             pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Enabled = false;
             pictureBox1.Image = Properties.Resources.anh_may_bay_dep_041752800;
-            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Location = new Point(0, 1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 451);
+            pictureBox1.Size = new Size(797, 437);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(214, 175);
+            label1.Location = new Point(8, 135);
             label1.Name = "label1";
             label1.Size = new Size(107, 20);
             label1.TabIndex = 1;
@@ -65,7 +66,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(218, 227);
+            label2.Location = new Point(12, 187);
             label2.Name = "label2";
             label2.Size = new Size(46, 20);
             label2.TabIndex = 2;
@@ -74,7 +75,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(214, 275);
+            label3.Location = new Point(8, 235);
             label3.Name = "label3";
             label3.Size = new Size(70, 20);
             label3.TabIndex = 3;
@@ -83,7 +84,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(214, 322);
+            label4.Location = new Point(8, 282);
             label4.Name = "label4";
             label4.Size = new Size(130, 20);
             label4.TabIndex = 4;
@@ -91,28 +92,28 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(375, 168);
+            textBox1.Location = new Point(150, 132);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(247, 27);
             textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(375, 224);
+            textBox2.Location = new Point(150, 188);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(247, 27);
             textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(375, 268);
+            textBox3.Location = new Point(150, 232);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(247, 27);
             textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(375, 315);
+            textBox4.Location = new Point(150, 279);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(247, 27);
             textBox4.TabIndex = 8;
@@ -120,12 +121,13 @@
             // button1
             // 
             button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(528, 376);
+            button1.Location = new Point(303, 340);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 9;
             button1.Text = "Đăng kí";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // Dangky
             // 

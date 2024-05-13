@@ -94,7 +94,7 @@
             MaximizeBox = false;
             Name = "LoginForm";
             Text = "LoginForm";
-            Load += LoginForm_Load_1;
+            Load += LoginForm_Load;
             KeyPress += RunProgressBar;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
