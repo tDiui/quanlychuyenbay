@@ -24,7 +24,7 @@ namespace BaoCaoCuoiKy
         {
             InitializeComponent();
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Để ảnh hiển thị đầy đủ trong PictureBox
-            timer1.Interval = 2000; // 2 giây
+            timer1.Interval = 5000; // 5 giây
             timer1.Tick += Timer_Tick;
 
             timer1.Start();

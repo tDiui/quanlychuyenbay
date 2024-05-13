@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -39,12 +38,15 @@
             textBox3 = new TextBox();
             textBox4 = new TextBox();
             button1 = new Button();
-            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.BackgroundImage = Properties.Resources.hinh_anh_may_bay_phan_luc;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = Properties.Resources.anh_may_bay_dep_041752800;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(800, 451);
@@ -160,6 +162,5 @@
         private TextBox textBox3;
         private TextBox textBox4;
         private Button button1;
-        private System.Windows.Forms.Timer timer1;
     }
 }
