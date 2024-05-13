@@ -81,5 +81,10 @@ namespace BaoCaoCuoiKy
         {
 
         }
+
+        private void TaiKhoanBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

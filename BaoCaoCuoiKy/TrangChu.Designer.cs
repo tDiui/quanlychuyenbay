@@ -43,7 +43,7 @@
             label2.AutoSize = true;
             label2.BackColor = SystemColors.AppWorkspace;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(260, 64);
+            label2.Location = new Point(260, 79);
             label2.Name = "label2";
             label2.Size = new Size(62, 15);
             label2.TabIndex = 5;
@@ -55,7 +55,7 @@
             label1.AutoSize = true;
             label1.BackColor = SystemColors.AppWorkspace;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(260, 7);
+            label1.Location = new Point(259, 27);
             label1.Name = "label1";
             label1.Size = new Size(62, 15);
             label1.TabIndex = 4;
@@ -64,7 +64,7 @@
             // MatKhauBox
             // 
             MatKhauBox.BackColor = SystemColors.AppWorkspace;
-            MatKhauBox.Location = new Point(260, 84);
+            MatKhauBox.Location = new Point(259, 96);
             MatKhauBox.Margin = new Padding(3, 2, 3, 2);
             MatKhauBox.Name = "MatKhauBox";
             MatKhauBox.Size = new Size(147, 23);
@@ -74,7 +74,7 @@
             // TaiKhoanBox
             // 
             TaiKhoanBox.BackColor = SystemColors.AppWorkspace;
-            TaiKhoanBox.Location = new Point(260, 28);
+            TaiKhoanBox.Location = new Point(259, 44);
             TaiKhoanBox.Margin = new Padding(3, 2, 3, 2);
             TaiKhoanBox.Name = "TaiKhoanBox";
             TaiKhoanBox.Size = new Size(148, 23);
@@ -109,7 +109,7 @@
             // 
             DangNhapBtn.BackColor = SystemColors.AppWorkspace;
             DangNhapBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DangNhapBtn.Location = new Point(291, 127);
+            DangNhapBtn.Location = new Point(289, 137);
             DangNhapBtn.Margin = new Padding(3, 2, 3, 2);
             DangNhapBtn.Name = "DangNhapBtn";
             DangNhapBtn.Size = new Size(88, 22);
