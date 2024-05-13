@@ -113,6 +113,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.Image = Properties.Resources.anh_may_bay_dang_bay;
             pictureBox1.InitialImage = null;
             pictureBox1.Location = new Point(-3, 1);
             pictureBox1.Name = "pictureBox1";
