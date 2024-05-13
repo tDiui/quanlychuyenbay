@@ -28,123 +28,100 @@
         /// </summary>
         private void InitializeComponent()
         {
+            dataGridView1 = new DataGridView();
+            Lammoi = new Button();
+            Them = new Button();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            textBox3 = new TextBox();
-            label5 = new Label();
-            textBox4 = new TextBox();
+            Thoat = new Button();
+            Xoa = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(2, 82);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(696, 244);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // Lammoi
+            // 
+            Lammoi.Location = new Point(12, 27);
+            Lammoi.Name = "Lammoi";
+            Lammoi.Size = new Size(75, 23);
+            Lammoi.TabIndex = 1;
+            Lammoi.Text = "Lam moi";
+            Lammoi.UseVisualStyleBackColor = true;
+            Lammoi.Click += button1_Click;
+            // 
+            // Them
+            // 
+            Them.Location = new Point(128, 27);
+            Them.Name = "Them";
+            Them.Size = new Size(75, 23);
+            Them.TabIndex = 2;
+            Them.Text = "Them";
+            Them.UseVisualStyleBackColor = true;
+            Them.Click += Them_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(207, 9);
+            label1.Location = new Point(257, 4);
             label1.Name = "label1";
-            label1.Size = new Size(242, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Nguoi dung nhap thong tin ca nhan vao day";
+            label1.Size = new Size(126, 15);
+            label1.TabIndex = 3;
+            label1.Text = "danh sach khach hang";
             // 
-            // label2
+            // Thoat
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(39, 49);
-            label2.Name = "label2";
-            label2.Size = new Size(89, 15);
-            label2.TabIndex = 0;
-            label2.Text = "ten khach hang";
+            Thoat.Location = new Point(603, 27);
+            Thoat.Name = "Thoat";
+            Thoat.Size = new Size(75, 23);
+            Thoat.TabIndex = 4;
+            Thoat.Text = "Thoat";
+            Thoat.UseVisualStyleBackColor = true;
+            Thoat.Click += Thoat_Click;
             // 
-            // label3
+            // Xoa
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(39, 86);
-            label3.Name = "label3";
-            label3.Size = new Size(30, 15);
-            label3.TabIndex = 0;
-            label3.Text = "Tuoi";
-            label3.Click += label3_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(156, 41);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(244, 23);
-            textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(156, 78);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(244, 23);
-            textBox2.TabIndex = 2;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(40, 121);
-            label4.Name = "label4";
-            label4.Size = new Size(43, 15);
-            label4.TabIndex = 3;
-            label4.Text = "Dia chi";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(156, 113);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(244, 23);
-            textBox3.TabIndex = 4;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(39, 155);
-            label5.Name = "label5";
-            label5.Size = new Size(98, 15);
-            label5.TabIndex = 5;
-            label5.Text = "Thong tin lien lac";
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(156, 147);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(244, 23);
-            textBox4.TabIndex = 6;
+            Xoa.Location = new Point(490, 27);
+            Xoa.Name = "Xoa";
+            Xoa.Size = new Size(75, 23);
+            Xoa.TabIndex = 5;
+            Xoa.Text = "Xoa";
+            Xoa.UseVisualStyleBackColor = true;
+            Xoa.Click += Xoa_Click;
             // 
             // ThongTinKH
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(700, 338);
-            Controls.Add(textBox4);
-            Controls.Add(label5);
-            Controls.Add(textBox3);
-            Controls.Add(label4);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(Xoa);
+            Controls.Add(Thoat);
             Controls.Add(label1);
+            Controls.Add(Them);
+            Controls.Add(Lammoi);
+            Controls.Add(dataGridView1);
             Margin = new Padding(3, 2, 3, 2);
             Name = "ThongTinKH";
             Text = "ThongTinKH";
             Load += ThongTinKH_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
+        private DataGridView dataGridView1;
+        private Button Lammoi;
+        private Button Them;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Label label4;
-        private TextBox textBox3;
-        private Label label5;
-        private TextBox textBox4;
+        private Button Thoat;
+        private Button Xoa;
     }
 }
