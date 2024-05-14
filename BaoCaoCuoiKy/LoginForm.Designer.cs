@@ -28,23 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             pictureBox1 = new PictureBox();
             pB1 = new ProgressBar();
             label1 = new Label();
             label2 = new Label();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = Properties.Resources.maybay;
+            pictureBox1.Image = Properties.Resources.hinh_anh_bay_tren_troi_la_may_bay_111631532;
             pictureBox1.Location = new Point(3, 82);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(617, 276);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pB1
             // 
@@ -104,5 +107,6 @@
         private ProgressBar pB1;
         private Label label1;
         private Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
