@@ -28,13 +28,10 @@
     <Compile Update="ThongTinKH.cs">
       <SubType>Form</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="TrangChu.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>
