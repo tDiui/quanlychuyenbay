@@ -21,6 +21,7 @@ namespace BaoCaoCuoiKy
         QuanTriDTO quanTriDTO = new QuanTriDTO();
         QuanTriBUS quanTriBUS = new QuanTriBUS();
         //SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
+        //SqlConnection conn = newSqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
         public TrangChu()
         {
             InitializeComponent();
