@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            Dangkibtn = new Button();
             label2 = new Label();
             label1 = new Label();
             MatKhauBox = new TextBox();
@@ -63,6 +64,7 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.AppWorkspace;
+            panel1.Controls.Add(Dangkibtn);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(MatKhauBox);
@@ -75,6 +77,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(194, 451);
             panel1.TabIndex = 1;
+            // 
+            // Dangkibtn
+            // 
+            Dangkibtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            Dangkibtn.Location = new Point(13, 300);
+            Dangkibtn.Name = "Dangkibtn";
+            Dangkibtn.Size = new Size(149, 30);
+            Dangkibtn.TabIndex = 6;
+            Dangkibtn.Text = "Dăng kí Tài khoản";
+            Dangkibtn.UseCompatibleTextRendering = true;
+            Dangkibtn.UseVisualStyleBackColor = true;
+            Dangkibtn.Click += Dangkibtn_Click;
             // 
             // label2
             // 
@@ -155,6 +169,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 2;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
@@ -226,5 +241,6 @@
         private Label label1;
         private TextBox MatKhauBox;
         private TextBox TaiKhoanBox;
+        private Button Dangkibtn;
     }
 }

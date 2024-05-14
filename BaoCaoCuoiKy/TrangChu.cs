@@ -51,7 +51,7 @@ namespace BaoCaoCuoiKy
                 this.Hide();
                 qtf.FormBorderStyle = FormBorderStyle.FixedDialog;
             }
-            qtf.Closed += ShowTrangChu; 
+            qtf.Closed += ShowTrangChu;
         }
 
         private void ShowTrangChu(object sender, EventArgs e)
@@ -79,6 +79,17 @@ namespace BaoCaoCuoiKy
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dangkibtn_Click(object sender, EventArgs e)
+        {
+            Register registerForm = new Register();
+            registerForm.ShowDialog();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

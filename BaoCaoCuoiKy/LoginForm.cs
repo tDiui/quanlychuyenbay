@@ -42,7 +42,12 @@ namespace BaoCaoCuoiKy
             rf.Show();
             this.Hide();
             rf.Closed += (sender, e) => this.Close();
-            
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
