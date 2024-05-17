@@ -13,7 +13,7 @@ namespace BaoCaoCuoiKy
 {
     public partial class QuanTriForm : Form
     {
-        static string connection_string = @"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
+        static string connection_string = @"Data Source=DESKTOP-JOQJAEU;Initial Catalog=qlSanBay;Integrated Security=True;";
         SqlConnection conn = new SqlConnection(connection_string);
         ChuyenBayDTO chuyenBayDTO = new ChuyenBayDTO();
         ChuyenBayBUS chuyenBayBUS = new ChuyenBayBUS();
