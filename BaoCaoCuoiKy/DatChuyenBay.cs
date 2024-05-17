@@ -36,7 +36,7 @@ namespace BaoCaoCuoiKy
             DataTable db = new DataTable();
             data.Fill(db);
 
-           
+
 
 
         }
@@ -58,7 +58,7 @@ namespace BaoCaoCuoiKy
             string DiemDi, DiemDen;
             var NgayDi = NgayDiPick.Text;
             var NgayVe = NgayVePick.Text;
-            if(KhuHoiPick.Text != "True" && KhuHoiPick.Text != "False")
+            if (KhuHoiPick.Text != "True" && KhuHoiPick.Text != "False")
             {
                 MessageBox.Show("vui lòng chọn chế độ chuyến bay!!");
                 return;
@@ -173,6 +173,11 @@ namespace BaoCaoCuoiKy
         private void DongForm(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
