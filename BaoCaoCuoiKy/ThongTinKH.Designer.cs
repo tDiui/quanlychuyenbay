@@ -100,6 +100,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "ThongTinKH";
             Text = "ThongTinKH";
+            Load += ThongTinKH_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

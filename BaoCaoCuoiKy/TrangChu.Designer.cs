@@ -46,9 +46,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(0, 197);
+            label2.Location = new Point(0, 148);
             label2.Name = "label2";
-            label2.Size = new Size(79, 20);
+            label2.Size = new Size(62, 15);
             label2.TabIndex = 5;
             label2.Text = "Mật khẩu:";
             label2.Click += label2_Click;
@@ -57,33 +57,36 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(0, 149);
+            label1.Location = new Point(0, 112);
             label1.Name = "label1";
-            label1.Size = new Size(80, 20);
+            label1.Size = new Size(62, 15);
             label1.TabIndex = 4;
             label1.Text = "Tài khoản:";
             // 
             // MatKhauBox
             // 
-            MatKhauBox.Location = new Point(116, 194);
+            MatKhauBox.Location = new Point(102, 146);
+            MatKhauBox.Margin = new Padding(3, 2, 3, 2);
             MatKhauBox.Name = "MatKhauBox";
-            MatKhauBox.Size = new Size(204, 27);
+            MatKhauBox.Size = new Size(179, 23);
             MatKhauBox.TabIndex = 3;
             MatKhauBox.TextChanged += textBox2_TextChanged;
             // 
             // TaiKhoanBox
             // 
-            TaiKhoanBox.Location = new Point(116, 142);
+            TaiKhoanBox.Location = new Point(102, 106);
+            TaiKhoanBox.Margin = new Padding(3, 2, 3, 2);
             TaiKhoanBox.Name = "TaiKhoanBox";
-            TaiKhoanBox.Size = new Size(204, 27);
+            TaiKhoanBox.Size = new Size(179, 23);
             TaiKhoanBox.TabIndex = 2;
             // 
             // ThoatBtn
             // 
             ThoatBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            ThoatBtn.Location = new Point(688, 12);
+            ThoatBtn.Location = new Point(602, 9);
+            ThoatBtn.Margin = new Padding(3, 2, 3, 2);
             ThoatBtn.Name = "ThoatBtn";
-            ThoatBtn.Size = new Size(100, 30);
+            ThoatBtn.Size = new Size(88, 22);
             ThoatBtn.TabIndex = 1;
             ThoatBtn.Text = "Thoát";
             ThoatBtn.UseVisualStyleBackColor = true;
@@ -92,19 +95,22 @@
             // DatChuyenBayBtn
             // 
             DatChuyenBayBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DatChuyenBayBtn.Location = new Point(258, 264);
+            DatChuyenBayBtn.Location = new Point(226, 198);
+            DatChuyenBayBtn.Margin = new Padding(3, 2, 3, 2);
             DatChuyenBayBtn.Name = "DatChuyenBayBtn";
-            DatChuyenBayBtn.Size = new Size(100, 30);
+            DatChuyenBayBtn.Size = new Size(88, 22);
             DatChuyenBayBtn.TabIndex = 1;
             DatChuyenBayBtn.Text = "Đặt chuyến bay";
             DatChuyenBayBtn.UseVisualStyleBackColor = true;
+            DatChuyenBayBtn.Click += DatChuyenBayBtn_Click;
             // 
             // DangNhapBtn
             // 
             DangNhapBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DangNhapBtn.Location = new Point(0, 264);
+            DangNhapBtn.Location = new Point(0, 198);
+            DangNhapBtn.Margin = new Padding(3, 2, 3, 2);
             DangNhapBtn.Name = "DangNhapBtn";
-            DangNhapBtn.Size = new Size(100, 30);
+            DangNhapBtn.Size = new Size(88, 22);
             DangNhapBtn.TabIndex = 1;
             DangNhapBtn.Text = "Đăng nhập";
             DangNhapBtn.UseCompatibleTextRendering = true;
@@ -117,8 +123,9 @@
             pictureBox1.Image = Properties.Resources.anh_may_bay_dang_bay;
             pictureBox1.InitialImage = null;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(800, 450);
+            pictureBox1.Size = new Size(700, 338);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
@@ -127,9 +134,10 @@
             // button1
             // 
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button1.Location = new Point(129, 264);
+            button1.Location = new Point(113, 198);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(100, 30);
+            button1.Size = new Size(88, 22);
             button1.TabIndex = 7;
             button1.Text = "Đăng kí";
             button1.UseVisualStyleBackColor = true;
@@ -137,10 +145,10 @@
             // 
             // TrangChu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(button1);
             Controls.Add(ThoatBtn);
             Controls.Add(MatKhauBox);
@@ -150,6 +158,7 @@
             Controls.Add(label1);
             Controls.Add(TaiKhoanBox);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             MaximizeBox = false;
             Name = "TrangChu";
             ShowInTaskbar = false;

@@ -13,7 +13,7 @@ namespace BaoCaoCuoiKy
 {
     public partial class DatChuyenBay : Form
     {
-        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JOQJAEU;Initial Catalog=qlSanBay;Integrated Security=True;");
         ChuyenBayDAO chuyenBayDAO = new ChuyenBayDAO();
         public DatChuyenBay()
         {
@@ -67,7 +67,7 @@ namespace BaoCaoCuoiKy
             DiemDi = DiemDiPick.Text;
             DiemDen = DiemDenPick.Text;
 
-            string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-JOQJAEU;Initial Catalog=qlSanBay;Integrated Security=True;";
 
             // SQL query to select records from a table
             string query = $"select CBC.IdChuyenBay, CBC.NoiKhoiHanh, CBC.NoiHaCanh,CBC.TGKhoiHanh, CBKH.TGKhoiHanh as TGVe, CBC.GiaVe, CBC.TongChoNgoi,CBC.IdChuyenBayKhuHoi, CBC.KhuHoi from ChuyenBay as CBC join ChuyenBay as CBKH on( CBC.IdChuyenBayKhuHoi = CBKH.IdChuyenBay) WHERE (CONVERT(DATE,CBC.TGKhoiHanh) = '{NgayDi}' AND CONVERT(DATE, CBKH.TGKhoiHanh) = '{NgayVe}' AND CBC.NoiKhoiHanh = '{DiemDi}' AND CBC.NoiHaCanh = '{DiemDen}')";

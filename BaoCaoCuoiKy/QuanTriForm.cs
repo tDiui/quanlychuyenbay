@@ -181,5 +181,11 @@ namespace BaoCaoCuoiKy
         {
 
         }
+
+        private void thongTinKHToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongTinKH thongTinKHForm = new ThongTinKH();
+            thongTinKHForm.Show();
+        }
     }
 }
