@@ -103,8 +103,14 @@ namespace BaoCaoCuoiKy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dangky dangky= new Dangky();    
+            Dangky dangky = new Dangky();
             dangky.ShowDialog();
+        }
+
+        private void DatChuyenBayBtn_Click(object sender, EventArgs e)
+        {
+            DatChuyenBay datChuyenBay = new DatChuyenBay();
+            datChuyenBay.Show();
         }
     }
 }

@@ -50,5 +50,41 @@ namespace BaoCaoCuoiKy
             DataTable dt = data.executeQuery(query);
             return dt;
         }
+
+        public DataTable getDSDiemDi()
+        {
+            string query = "Select NoiKhoiHanh from ChuyenBay where NoiKhoiHanh != '' group by NoiKhoiHanh";
+            return data.executeQuery(query);
+        }
+
+        public DataTable getDSDiemDen()
+        {
+            string query = "Select NoiHaCanh from ChuyenBay where NoiKhoiHanh != '' group by NoiHaCanh";
+            return data.executeQuery(query);
+        }
+
+        private int castBoolToInt(bool Target)
+        {
+            if(Target == true)
+            {
+                return 1;
+            }else if(Target == false)
+            {
+                return 0;
+            }
+            return 0;
+        }
+
+        public DataTable getDSChuyenBayCanTim(string DiemDi, string DiemDen, DateTime ThoiGianDi, DateTime ThoiGianDen, bool KhuHoi)
+        {
+            string query = $"Select * from ChuyenBay as A join ChuyenBay as B on (B.IdChuyenBay = A.IdChuyenBayKhuHoi) where A.NoiKhoiHanh = '{DiemDi}' AND A.NoiHaCanh = '{DiemDen}' AND CONVERT(DATE,A.TGKhoiHanh) = '{ThoiGianDi}' AND CONVERT(DATE,B.TGKhoiHanh) = '{ThoiGianDen}' AND A.KhuHoi = {castBoolToInt(KhuHoi)}";
+            return data.executeQuery(query);
+        }
+
+        public DataTable getDSChuyenBayCanTim(string DiemDi, string DiemDen, DateTime ThoiGianDi, bool KhuHoi)
+        {
+            string query = $"Select * from ChuyenBay where NoiKhoiHanh = '{DiemDi}' AND NoiHaCanh = '{DiemDen}' AND CONVERT(DATE,TGKhoiHanh) = '{ThoiGianDi}' AND KhuHoi = {castBoolToInt(KhuHoi)}";
+            return data.executeQuery(query);
+        }
     }
 }
