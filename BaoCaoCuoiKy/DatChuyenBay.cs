@@ -107,9 +107,8 @@ namespace BaoCaoCuoiKy
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 // Retrieve the value of the clicked cell
-                object cellValue = dataGridView1.Rows[e.RowIndex].Cells[0];
-                ChonSoLuongVe chonSoLuongVe = new ChonSoLuongVe();
-                chonSoLuongVe.GetMaChuyenBay(cellValue.ToString());
+                var idChuyenBay = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                ChonSoLuongVe chonSoLuongVe = new ChonSoLuongVe(idChuyenBay.ToString());
                 chonSoLuongVe.Show();
                 this.Hide();
                 chonSoLuongVe.Closed += MoForm;
@@ -132,6 +131,16 @@ namespace BaoCaoCuoiKy
             else if(KhuHoiPick.SelectedItem == "False")
             {
                 NgayVePick.Enabled = false;
+            }
+        }
+
+        private void Formating(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if(e.CellStyle.SelectionBackColor != e.CellStyle.BackColor)
+            {
+                DataGridViewCellStyle origin = e.CellStyle.Clone();
+                e.CellStyle.SelectionBackColor = e.CellStyle.BackColor;
+                e.CellStyle.SelectionForeColor = origin.ForeColor;
             }
         }
     }

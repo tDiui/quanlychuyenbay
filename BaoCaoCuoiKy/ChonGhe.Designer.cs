@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            IdGheChuyenBay = new DataGridViewTextBoxColumn();
-            IdChuyenBay = new DataGridViewTextBoxColumn();
-            MaGhe = new DataGridViewTextBoxColumn();
-            TinhTrangDat = new DataGridViewTextBoxColumn();
-            LoaiGhe = new DataGridViewTextBoxColumn();
             STKBox = new TextBox();
             fdfdf = new Label();
             dfdfdf = new Label();
@@ -46,48 +41,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { IdGheChuyenBay, IdChuyenBay, MaGhe, TinhTrangDat, LoaiGhe });
             dataGridView1.Location = new Point(67, 155);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(678, 394);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // IdGheChuyenBay
-            // 
-            IdGheChuyenBay.HeaderText = "Id ghế chuyến bay";
-            IdGheChuyenBay.MinimumWidth = 6;
-            IdGheChuyenBay.Name = "IdGheChuyenBay";
-            IdGheChuyenBay.Width = 125;
-            // 
-            // IdChuyenBay
-            // 
-            IdChuyenBay.HeaderText = "Id chuyến bay";
-            IdChuyenBay.MinimumWidth = 6;
-            IdChuyenBay.Name = "IdChuyenBay";
-            IdChuyenBay.Width = 125;
-            // 
-            // MaGhe
-            // 
-            MaGhe.HeaderText = "Mã ghế";
-            MaGhe.MinimumWidth = 6;
-            MaGhe.Name = "MaGhe";
-            MaGhe.Width = 125;
-            // 
-            // TinhTrangDat
-            // 
-            TinhTrangDat.HeaderText = "Tình trạng đặt";
-            TinhTrangDat.MinimumWidth = 6;
-            TinhTrangDat.Name = "TinhTrangDat";
-            TinhTrangDat.Width = 125;
-            // 
-            // LoaiGhe
-            // 
-            LoaiGhe.HeaderText = "Loại ghế";
-            LoaiGhe.MinimumWidth = 6;
-            LoaiGhe.Name = "LoaiGhe";
-            LoaiGhe.Width = 125;
             // 
             // STKBox
             // 
@@ -160,11 +119,6 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn IdGheChuyenBay;
-        private DataGridViewTextBoxColumn IdChuyenBay;
-        private DataGridViewTextBoxColumn MaGhe;
-        private DataGridViewTextBoxColumn TinhTrangDat;
-        private DataGridViewTextBoxColumn LoaiGhe;
         private TextBox STKBox;
         private Label fdfdf;
         private Label dfdfdf;

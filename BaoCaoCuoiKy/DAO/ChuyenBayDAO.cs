@@ -86,5 +86,12 @@ namespace BaoCaoCuoiKy
             string query = $"Select * from ChuyenBay where NoiKhoiHanh = '{DiemDi}' AND NoiHaCanh = '{DiemDen}' AND CONVERT(DATE,TGKhoiHanh) = '{ThoiGianDi}' AND KhuHoi = {castBoolToInt(KhuHoi)}";
             return data.executeQuery(query);
         }
+
+        public int DemSoLuongGheNgoi(int idChuyenBay, string loaiVe)
+        {
+            string query = $"select count(IdChuyenBay) as SoLuongVe from GheNgoi WHERE TinhTrangDat = '0' AND LoaiGhe = '{loaiVe}' AND IdChuyenBay = {idChuyenBay}";
+            var soLuongVe = data.executeScalar(query);
+            return (int)soLuongVe;
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿using BaoCaoCuoiKy.DTO;
+﻿using BaoCaoCuoiKy;
 using System;
 using System.Collections.Generic;
 using System.Linq;

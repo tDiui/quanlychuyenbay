@@ -52,11 +52,12 @@
             dataGridView1.Size = new Size(1177, 582);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            dataGridView1.CellFormatting += Formating;
             // 
             // TimChuyenBayBtn
             // 
             TimChuyenBayBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            TimChuyenBayBtn.Location = new Point(786, 87);
+            TimChuyenBayBtn.Location = new Point(933, 42);
             TimChuyenBayBtn.Name = "TimChuyenBayBtn";
             TimChuyenBayBtn.Size = new Size(134, 41);
             TimChuyenBayBtn.TabIndex = 1;
