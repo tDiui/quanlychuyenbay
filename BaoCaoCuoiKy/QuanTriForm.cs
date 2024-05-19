@@ -22,7 +22,6 @@ namespace BaoCaoCuoiKy
         public QuanTriForm()
         {
             InitializeComponent();
-            conn.Open();
         }
 
         public void getData()
