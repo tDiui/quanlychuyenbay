@@ -17,11 +17,22 @@ namespace BaoCaoCuoiKy
         SqlConnection conn = new SqlConnection(connection_string);
         ChuyenBayDTO chuyenBayDTO = new ChuyenBayDTO();
         ChuyenBayBUS chuyenBayBUS = new ChuyenBayBUS();
+        DatChuyenBayBUS dcbBUS = new DatChuyenBayBUS();
 
         public QuanTriForm()
         {
             InitializeComponent();
             conn.Open();
+        }
+
+        public void getData()
+        {
+            
+            chuyenBayDTO.IdChuyenBay = int.Parse(idChuyenBayBox.Text);
+            chuyenBayDTO.NoiKhoiHanh = noiKhoiHanhCb.Text;
+            chuyenBayDTO.NoiHaCanh = noiHaCanhCb.Text;
+            chuyenBayDTO.GiaVe = int.Parse(giaVeBox.Text);
+            chuyenBayBUS.info = chuyenBayDTO;
         }
 
         public void DinhDangLuoi()
@@ -52,134 +63,61 @@ namespace BaoCaoCuoiKy
             DataTable dt = chuyenBayBUS.getDSChuyenBay();
             Grid1.DataSource = dt;
             DinhDangLuoi();
+            DataTable DiemDi = dcbBUS.getDSDiemDi();
+            DiemDi.Rows.Add("None");
+            DataTable DiemDen = dcbBUS.getDSDiemDen();
+            DiemDen.Rows.Add("None");
+            noiKhoiHanhCb.ValueMember = "NoiKhoiHanh";
+            noiHaCanhCb.ValueMember = "NoiHaCanh";
+            noiKhoiHanhCb.DataSource = DiemDi;
+            noiHaCanhCb.DataSource = DiemDen;
+            noiKhoiHanhCb.SelectedIndex = 2;
+            noiHaCanhCb.SelectedIndex = 2;
+            giaVeBox.Text = null;
+            idChuyenBayBox.Text = null;
         }
 
-        /*
-         private void ResetBtn_Click(object sender, EventArgs e)
+        private void locDanhSachChuyenBay()
         {
-            IdChuyenBayBox.Clear();
-            NoiCatCanhBox.Clear();
-            NoiHaCanhBox.Clear();
-            TGKhoiHanhBox.Clear();
-            TGDenNoiBox.Clear();
-            GiaVeBox.Clear();
-            TongChoNgoiBox.Clear();
-            IdChuyenBayKhuHoiBox.Clear();
-            LaChuyenBayKhuHoiBox.Clear();
-        }
+            DataTable dt = chuyenBayBUS.getDsChuyenBayTheoFilter();
+            Grid1.DataSource = dt;
+            DinhDangLuoi();
+            DataTable DiemDi = dcbBUS.getDSDiemDi();
+            DiemDi.Rows.Add("None");
+            DataTable DiemDen = dcbBUS.getDSDiemDen();
+            DiemDen.Rows.Add("None");
+            noiKhoiHanhCb.ValueMember = "NoiKhoiHanh";
+            noiHaCanhCb.ValueMember = "NoiHaCanh";
+            noiKhoiHanhCb.DataSource = DiemDi;
+            noiHaCanhCb.DataSource = DiemDen;
+            noiKhoiHanhCb.SelectedIndex = 2;
+            noiHaCanhCb.SelectedIndex = 2;
+            giaVeBox.Text = null;
+            idChuyenBayBox.Text = null;
+        } 
 
-        private void ClockTextBox()
+            private void Grid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //IdChuyenBayBox.ReadOnly = true;
-            NoiCatCanhBox.ReadOnly = true;
-            NoiHaCanhBox.ReadOnly = true;
-            TGKhoiHanhBox.ReadOnly = true;
-            TGDenNoiBox.ReadOnly = true;
-            GiaVeBox.ReadOnly = true;
-            TongChoNgoiBox.ReadOnly = true;
-            IdChuyenBayKhuHoiBox.ReadOnly = true;
-            LaChuyenBayKhuHoiBox.ReadOnly = true;
-        }
-
-
-        private void ThemChuyenBayBtn_Click(object sender, EventArgs e)
-        {
-
-            ThemChuyenBayPanel.Show();
-            TimChuyenBay.Show();
-            ThemChuyenBayLb.Show();
-            XoaChuyenBayLb.Hide();
-            TimChuyenBayLb.Hide();
-        }
-
-        private void XoaChuyenBayBtn_Click(object sender, EventArgs e)
-        {
-            TimChuyenBay.Show();
-            ThemChuyenBayLb.Hide();
-            TimChuyenBayLb.Hide();
-            XoaChuyenBayLb.Show();
-            ClockTextBox();
 
         }
 
-        private void TimChuyenBayBtn_Click(object sender, EventArgs e)
+        //bo che do loc
+        private void button2_Click(object sender, EventArgs e)
         {
-            TimChuyenBay.Show();
-            ThemChuyenBayLb.Hide();
-            XoaChuyenBayLb.Hide();
-            TimChuyenBayLb.Show();
-            ClockTextBox();
+            QuanTriForm_Load(sender, e);
         }
 
-
-        private void TimChuyenBay_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (TimChuyenBayLb.Visible.ToString() == "True" || XoaChuyenBayLb.Visible.ToString() == "True" || ThemChuyenBayLb.Visible.ToString() == "True")
+            try
             {
                 getData();
-
-
-                string IdChuyenBay;
-                IdChuyenBay = IdChuyenBayBox.Text;
-                string query = $"Select * from ChuyenBay where IdChuyenBay = '{IdChuyenBay}'";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
-                DataTable dataTable = new DataTable();
-                adapter.Fill(dataTable);
-                if (dataTable.Rows.Count <= 0)
-                {
-                    MessageBox.Show("Không có chuyên bay cần tìm");
-                    ResetBtn_Click(sender, new EventArgs());
-                    return;
-                }
-                IdChuyenBayBox.Text = dataTable.Rows[0][0].ToString();
-                NoiCatCanhBox.Text = dataTable.Rows[0][1].ToString();
-                NoiHaCanhBox.Text = dataTable.Rows[0][2].ToString();
-                TGKhoiHanhBox.Text = dataTable.Rows[0][3].ToString();
-                TGDenNoiBox.Text = dataTable.Rows[0][4].ToString();
-                GiaVeBox.Text = dataTable.Rows[0][5].ToString();
-                TongChoNgoiBox.Text = dataTable.Rows[0][6].ToString();
-                IdChuyenBayKhuHoiBox.Text = dataTable.Rows[0][7].ToString();
-
+                locDanhSachChuyenBay();
             }
-        }
-
-        private void ThucHienBtn_Click(object sender, EventArgs e)
-        {
-            if (XoaChuyenBayLb.Visible.ToString() == "True")
+            catch(Exception ex)
             {
-                string qry = $"DELETE from ChuyenBay where IdChuyenBay = {IdChuyenBayBox.Text}";
-                SqlCommand cmd = new SqlCommand(qry, conn);
-                cmd.ExecuteNonQuery();
-                ResetBtn_Click(sender, new EventArgs());
-                MessageBox.Show("Xóa chuyến bay thành công");
-
+                MessageBox.Show(ex + "Vui lòng nhập đầy đủ thông tin để lọc");
             }
-
-
-            if (ThemChuyenBayLb.Visible.ToString() == "True")
-            {
-                string qry = $"INSERT INTO ChuyenBay Values( {IdChuyenBayBox.Text}, '{NoiCatCanhBox.Text}', '{NoiHaCanhBox.Text}', '{TGKhoiHanhBox.Text}', '{TGDenNoiBox.Text}', {GiaVeBox.Text}, {TongChoNgoiBox.Text}, {IdChuyenBayKhuHoiBox.Text}, {LaChuyenBayKhuHoiBox.Text})";
-                SqlCommand cmd = new SqlCommand(qry, conn);
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("thêm chuyến bay thành công");
-            }
-        }
-
-        private void ThoatBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-         */
-
-
-        private void Grid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void ThemChuyenBayBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -29,6 +29,11 @@ namespace BaoCaoCuoiKy
         }
         */
 
+        public DataTable getDsChuyenBayTheoFilter()
+        {
+            return data.getDSChuyenBayTheoFilter(info.IdChuyenBay, info.NoiKhoiHanh, info.NoiHaCanh, info.GiaVe);
+        }
+
         public DataTable getDSChuyenBay()
         {
             return data.getDSChuyenBay();

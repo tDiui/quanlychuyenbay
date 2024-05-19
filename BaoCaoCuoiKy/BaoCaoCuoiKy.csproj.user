@@ -19,9 +19,6 @@
     <Compile Update="QuanTriForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TemporaryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="ThemChuyenBayForm.cs">
       <SubType>Form</SubType>
     </Compile>

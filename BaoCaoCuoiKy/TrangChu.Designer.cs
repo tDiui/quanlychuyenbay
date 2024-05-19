@@ -98,6 +98,7 @@
             DatChuyenBayBtn.TabIndex = 1;
             DatChuyenBayBtn.Text = "Đặt chuyến bay";
             DatChuyenBayBtn.UseVisualStyleBackColor = true;
+            DatChuyenBayBtn.Click += DatChuyenBayBtn_Click;
             // 
             // DangNhapBtn
             // 

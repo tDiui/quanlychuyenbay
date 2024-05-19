@@ -13,66 +13,35 @@ namespace BaoCaoCuoiKy
 {
     public partial class ChonSoLuongVe : Form
     {
-        int SoLuongVe;
-        string LoaiVe;
-        int IdChuyenBay;
-        int SoLuongVeThuc;
+        ChonSoLuongVeBUS chonVeBUS = new ChonSoLuongVeBUS();
+        ChonSoLuongVeDTO chonVeDTO = new ChonSoLuongVeDTO();
         public ChonSoLuongVe()
         {
-            InitializeComponent();
+            
         }
 
-        public void GetMaChuyenBay(string IdChuyenBay)
+        public void getData()
         {
-            this.IdChuyenBay = int.Parse(IdChuyenBay);
+            chonVeDTO.veCanMua = int.Parse(SoLuongVeBox.Text);
+            chonVeDTO.loaiVe = LoaiVeBox.Text;
+            chonVeBUS.chonVeDTO = chonVeDTO;
+        }
+
+        public ChonSoLuongVe(string IdChuyenBay)
+        {
+            chonVeDTO.idChuyenBay = int.Parse(IdChuyenBay);
+            InitializeComponent();
         }
 
         private void BatDauChonGheBtn_Click(object sender, EventArgs e)
         {
-            SoLuongVe = int.Parse(SoLuongVeBox.Text);
-            LoaiVe = LoaiVeBox.Text;
-            string query = $"select count(IdChuyenBay) as SoLuongVe from GheNgoi WHERE TinhTrangDat = '0' AND LoaiGhe = '{LoaiVe}' AND IdChuyenBay = {IdChuyenBay}";
-            string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
-
+            getData(); //dua data vao BUS
+ 
             
-            // Create a connection to the database
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                // Create a command to execute the query
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    try
-                    {
-                        // Open the connection
-                        connection.Open();
-
-                        // Execute the query and get a data reader
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            // Check if the reader has rows
-                            if (reader.HasRows)
-                            {
-                                // Loop through the rows
-                                reader.Read();
-                                SoLuongVeThuc = reader.GetInt32(0);
-                            }
-                            else
-                            {
-                                MessageBox.Show("Nhập không chính xác vui lòng nhập lại");                            
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        // Handle any exceptions
-                        MessageBox.Show("Error: " + ex.Message);
-                    }
-                }
-            }
-            if(SoLuongVe <= SoLuongVeThuc)
+            if(chonVeBUS.KiemTraSoLuongVe())
             {
                 ChonGhe chonGhe = new ChonGhe();
-                chonGhe.GetMaChuyenBay(IdChuyenBay, LoaiVe, SoLuongVe);
+                chonGhe.GetMaChuyenBay(chonVeDTO.idChuyenBay, chonVeDTO.loaiVe, chonVeDTO.veCanMua);
                 chonGhe.Show();
                 this.Hide();
                 chonGhe.Closed += DongForm;

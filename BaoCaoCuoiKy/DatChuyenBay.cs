@@ -13,17 +13,41 @@ namespace BaoCaoCuoiKy
 {
     public partial class DatChuyenBay : Form
     {
+        DatChuyenBayDTO datChuyenBayDTO = new DatChuyenBayDTO();
+        DatChuyenBayBUS dcbBUS = new DatChuyenBayBUS();
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
         ChuyenBayDAO chuyenBayDAO = new ChuyenBayDAO();
+        DataTable chuyenBayGrid = new DataTable();
         public DatChuyenBay()
         {
             InitializeComponent();
         }
 
+        public void getData()
+        {
+            datChuyenBayDTO.DienDi = DiemDiPick.Text;
+            datChuyenBayDTO.DiemDen = DiemDenPick.Text;
+            datChuyenBayDTO.ThoiGianDi = DateTime.Parse(NgayDiPick.Text);
+            datChuyenBayDTO.ThoiGianDen = DateTime.Parse(NgayVePick.Text);
+            bool flag = true;
+            if(KhuHoiPick.SelectedItem == "True")
+            {
+                flag = true;
+            }
+            else if(KhuHoiPick.SelectedItem == "False")
+            {
+                flag = false;
+            }
+            datChuyenBayDTO.KhuHoi = flag;
+            dcbBUS.DTO = datChuyenBayDTO;
+        }
+
         private void DatChuyenBay_Load(object sender, EventArgs e)
         {
-            DataTable DiemDi = chuyenBayDAO.getListDiemDi();
-            DataTable DiemDen = chuyenBayDAO.getListDiemDen();
+            DataTable DiemDi = dcbBUS.getDSDiemDi();
+            DataTable DiemDen = dcbBUS.getDSDiemDen();
+            DiemDiPick.ValueMember = "NoiKhoiHanh";
+            DiemDenPick.ValueMember = "NoiHaCanh";
             DiemDiPick.DataSource = DiemDi;
             DiemDenPick.DataSource = DiemDen;
 
@@ -36,9 +60,6 @@ namespace BaoCaoCuoiKy
             DataTable db = new DataTable();
             data.Fill(db);
 
-           
-
-
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -48,131 +69,75 @@ namespace BaoCaoCuoiKy
 
         private void TimChuyenBayBtn_Click(object sender, EventArgs e)
         {
-            dataGridView1.Rows.Clear();
-            dataGridView1.Refresh();
+            getData();
+            chuyenBayGrid.Rows.Clear();
+            chuyenBayGrid = dcbBUS.getDSChuyenBayCanTim();
             if (DiemDiPick.Text == "" || DiemDenPick.Text == "")
             {
                 MessageBox.Show("Không được để trống điêm đi hoặc điểm đến");
                 return;
             }
-            string DiemDi, DiemDen;
-            var NgayDi = NgayDiPick.Text;
-            var NgayVe = NgayVePick.Text;
-            if(KhuHoiPick.Text != "True" && KhuHoiPick.Text != "False")
+
+            if (KhuHoiPick.Text != "True" && KhuHoiPick.Text != "False")
             {
                 MessageBox.Show("vui lòng chọn chế độ chuyến bay!!");
                 return;
             }
 
-            DiemDi = DiemDiPick.Text;
-            DiemDen = DiemDenPick.Text;
+            if(chuyenBayGrid.Rows.Count <= 0)
+            {
+                MessageBox.Show("Không có chuyến bay cần tìm");
+            }
 
-            string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
+            dataGridView1.DataSource = chuyenBayGrid;
+
+            //string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True";
 
             // SQL query to select records from a table
-            string query = $"select CBC.IdChuyenBay, CBC.NoiKhoiHanh, CBC.NoiHaCanh,CBC.TGKhoiHanh, CBKH.TGKhoiHanh as TGVe, CBC.GiaVe, CBC.TongChoNgoi,CBC.IdChuyenBayKhuHoi, CBC.KhuHoi from ChuyenBay as CBC join ChuyenBay as CBKH on( CBC.IdChuyenBayKhuHoi = CBKH.IdChuyenBay) WHERE (CONVERT(DATE,CBC.TGKhoiHanh) = '{NgayDi}' AND CONVERT(DATE, CBKH.TGKhoiHanh) = '{NgayVe}' AND CBC.NoiKhoiHanh = '{DiemDi}' AND CBC.NoiHaCanh = '{DiemDen}')";
-            if (KhuHoiPick.Text == "False")
-            {
-                query = $"select CBC.IdChuyenBay, CBC.NoiKhoiHanh, CBC.NoiHaCanh,CBC.TGKhoiHanh, '' as TGVe, CBC.GiaVe, CBC.TongChoNgoi,'' as IdChuyenBayKhuHoi, CBC.KhuHoi from ChuyenBay as CBC  WHERE CONVERT(DATE,CBC.TGKhoiHanh) = '{NgayDi}' AND CBC.NoiKhoiHanh = '{DiemDi}' AND CBC.NoiHaCanh = '{DiemDen}' ";
-            }
-
-            // Create a connection to the database
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                // Create a command to execute the query
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    try
-                    {
-                        // Open the connection
-                        connection.Open();
-
-                        // Execute the query and get a data reader
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            // Check if the reader has rows
-                            if (reader.HasRows)
-                            {
-                                // Loop through the rows
-                                if (KhuHoiPick.Text == "True")
-                                {
-                                    while (reader.Read())
-                                    {
-                                        // Access columns by name or index
-                                        int IdChuyenBay = reader.GetInt32(0);
-                                        string NoiKhoiHanh = reader.GetString(1);
-                                        string NoiHaCanh = reader.GetString(2);
-                                        var TGKhoiHanh = reader.GetDateTime(3);
-                                        var TGVe = reader.GetDateTime(4);
-                                        Decimal GiaVe = reader.GetDecimal(5);
-                                        int TongChoNgoi = reader.GetInt32(6);
-                                        int IdChuyenBayKhuHoi = reader.GetInt32(7);
-                                        bool KhuHoi = reader.GetBoolean(8);
-                                        // Retrieve other columns as needed...
-
-                                        // Add a new row to the DataGridView
-
-                                        dataGridView1.Rows.Add(IdChuyenBay, NoiKhoiHanh, NoiHaCanh,
-                                            TGKhoiHanh, TGVe, GiaVe, TongChoNgoi, IdChuyenBayKhuHoi, KhuHoi);
-                                    }
-                                }
-                                else
-                                {
-                                    while (reader.Read())
-                                    {
-                                        // Access columns by name or index
-                                        int IdChuyenBay = reader.GetInt32(0);
-                                        string NoiKhoiHanh = reader.GetString(1);
-                                        string NoiHaCanh = reader.GetString(2);
-                                        var TGKhoiHanh = reader.GetDateTime(3);
-                                        String TGVe = reader.GetString(4);
-                                        Decimal GiaVe = reader.GetDecimal(5);
-                                        int TongChoNgoi = reader.GetInt32(6);
-                                        string IdChuyenBayKhuHoi = reader.GetString(7);
-                                        bool KhuHoi = reader.GetBoolean(8);
-                                        // Retrieve other columns as needed...
-
-                                        // Add a new row to the DataGridView
-
-                                        dataGridView1.Rows.Add(IdChuyenBay, NoiKhoiHanh, NoiHaCanh,
-                                            TGKhoiHanh, TGVe, GiaVe, TongChoNgoi, IdChuyenBayKhuHoi, KhuHoi);
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        // Handle any exceptions
-                        MessageBox.Show("Error: " + ex.Message);
-                    }
-                }
-            }
-        }
-
-        private void DiemDiPick_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 // Retrieve the value of the clicked cell
-                object cellValue = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
-                ChonSoLuongVe chonSoLuongVe = new ChonSoLuongVe();
-                chonSoLuongVe.GetMaChuyenBay(cellValue.ToString());
+                var idChuyenBay = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                ChonSoLuongVe chonSoLuongVe = new ChonSoLuongVe(idChuyenBay.ToString());
                 chonSoLuongVe.Show();
                 this.Hide();
-                chonSoLuongVe.Closed += DongForm;
+                chonSoLuongVe.Closed += MoForm;
                 // Display the value (for demonstration)
             }
         }
 
-        private void DongForm(object sender, EventArgs e)
+        private void MoForm(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Show();
+        }
+
+
+        private void KhuHoiPick_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (KhuHoiPick.SelectedItem == "True")
+            {
+                NgayVePick.Enabled = true;
+            }
+            else if(KhuHoiPick.SelectedItem == "False")
+            {
+                NgayVePick.Enabled = false;
+            }
+        }
+
+        private void Formating(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if(e.CellStyle.SelectionBackColor != e.CellStyle.BackColor)
+            {
+                DataGridViewCellStyle origin = e.CellStyle.Clone();
+                e.CellStyle.SelectionBackColor = e.CellStyle.BackColor;
+                e.CellStyle.SelectionForeColor = origin.ForeColor;
+            }
         }
     }
 }

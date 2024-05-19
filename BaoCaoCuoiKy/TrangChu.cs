@@ -21,6 +21,7 @@ namespace BaoCaoCuoiKy
         QuanTriDTO quanTriDTO = new QuanTriDTO();
         QuanTriBUS quanTriBUS = new QuanTriBUS();
         //SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
+        //SqlConnection conn = newSqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
         public TrangChu()
         {
             InitializeComponent();
@@ -102,8 +103,14 @@ namespace BaoCaoCuoiKy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dangky dangky= new Dangky();    
+            Dangky dangky = new Dangky();
             dangky.ShowDialog();
+        }
+
+        private void DatChuyenBayBtn_Click(object sender, EventArgs e)
+        {
+            DatChuyenBay datChuyenBay = new DatChuyenBay();
+            datChuyenBay.Show();
         }
     }
 }

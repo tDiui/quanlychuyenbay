@@ -14,10 +14,11 @@ namespace BaoCaoCuoiKy
     public partial class ChonGhe : Form
     {
         //string connectionString = "Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True;MultipleActiveResultSets=True;";
-        int IdMaChuyenBay, SoLuongVe, IdMaGheChuyenBay;
-        int IdKhachHang;
-        string LoaiGheChon;
-        string SoTaiKhoan, MatKhau;
+        GheNgoiDTO chonGheDTO = new GheNgoiDTO();
+        ChonGheBUS chonGheBUS = new ChonGheBUS();
+        DatChoBUS datChoBUS = new DatChoBUS();
+        GiaoDichBUS giaoDichBUS = new GiaoDichBUS();
+        DataTable dt = new DataTable();
         string connectionString = "";
         public ChonGhe()
         {
@@ -26,62 +27,28 @@ namespace BaoCaoCuoiKy
 
         public void GetMaChuyenBay(int IdChuyenBay, string LoaiGhe, int SoLuongVe)
         {
-            this.IdMaChuyenBay = IdChuyenBay;
-            this.SoLuongVe = SoLuongVe;
-            this.LoaiGheChon = LoaiGhe;
+            chonGheDTO.idMaChuyenBay = IdChuyenBay;
+            chonGheDTO.soLuongVe = SoLuongVe;
+            chonGheDTO.loaiGhe = LoaiGhe;
+            chonGheBUS.chonGheDTO = chonGheDTO;
+        }
+
+        public void getData()
+        {
+            chonGheDTO.idKhachHang = int.Parse(IdKHBox.Text);
+            chonGheDTO.soTaiKhoan = STKBox.Text;
+            chonGheDTO.matKhau = MatKhauBox.Text;
         }
 
         private void ChonGhe_Load(object sender, EventArgs e)
         {
 
-            // SQL query to select records from a table
-            string query = $"select * from GheNgoi WHERE TinhTrangDat = '0' AND LoaiGhe = '{LoaiGheChon}' AND IdChuyenBay = {IdMaChuyenBay}";
-
-            // Create a connection to the database
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                // Create a command to execute the query
-                using (SqlCommand command = new SqlCommand(query, connection))
-                {
-                    try
-                    {
-                        // Open the connection
-                        connection.Open();
-
-                        // Execute the query and get a data reader
-                        using (SqlDataReader reader = command.ExecuteReader())
-                        {
-                            // Check if the reader has rows
-                            if (reader.HasRows)
-                            {
-                                // Loop through the rows
-
-                                while (reader.Read())
-                                {
-                                    // Access columns by name or index
-                                    int IdGheChuyenBay = reader.GetInt32(0);
-                                    int IdChuyenBay = reader.GetInt32(1);
-                                    string MaGhe = reader.GetString(2);
-                                    var TinhTrangDat = reader.GetString(3);
-                                    String LoaiGhe = reader.GetString(4);
-                                    // Retrieve other columns as needed...
-
-                                    // Add a new row to the DataGridView
-
-                                    dataGridView1.Rows.Add(IdGheChuyenBay, IdChuyenBay, MaGhe, TinhTrangDat, LoaiGhe);
-                                }
-                            }
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        // Handle any exceptions
-                        MessageBox.Show("Error: " + ex.Message);
-                    }
-                }
-            }
+            dt = chonGheBUS.getDSGheNgoi();
+            dataGridView1.DataSource = dt;
+           
         }
 
+        
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -91,33 +58,25 @@ namespace BaoCaoCuoiKy
                     MessageBox.Show("Vui lập điền thông tin khách hàng!!!");
                     return;
                 }
+                getData(); //lấy dữ liệu stk và mk của khách hàng
+
                 if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
                 {
-                    // Retrieve the value of the clicked cell
-                    SqlConnection sqlConnection1 = new SqlConnection(connectionString);
-                    sqlConnection1.Open();
-                    object cellValue = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value;
-                    dataGridView1.Rows.Clear();
-                    IdMaGheChuyenBay = int.Parse(cellValue.ToString());
-                    IdKhachHang = int.Parse(IdKHBox.Text);
-                    string another_query = $"INSERT INTO DatCho Values ({IdKhachHang}, '{LoaiGheChon}', {IdMaGheChuyenBay})";
-                    SqlConnection sqlConnection = new SqlConnection(connectionString);
-                    SqlCommand cmd = new SqlCommand(another_query, sqlConnection1);
-                    cmd.ExecuteNonQuery();
-                    string Support_query = $"Select IdDatCho from DatCho ORDER BY IdDatCho DESC";
-                    SqlCommand command = new SqlCommand(Support_query,sqlConnection1);
-                    int IdDatCho;
-                    SqlDataReader reader = command.ExecuteReader();
-                        // Check if the reader has rows
-                    reader.Read();
-                    IdDatCho = reader.GetInt32(0);
+                   
+                    //láy idGheChuyenBay của bảng DatGhe
+                    chonGheDTO.idMaGheChuyenBay = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+                    dt.Rows.Clear();
+                    chonGheDTO.idKhachHang = int.Parse(IdKHBox.Text);
+                    //insert vào bảng DatCho
+                    datChoBUS.insert(chonGheDTO.idKhachHang, chonGheDTO.loaiGhe, chonGheDTO.idMaGheChuyenBay);    
+                    //lay id moi nhat trong DatCho
+                    int IdDatCho = datChoBUS.getIdDatCho();
+                    //insert vao bang GiaoDich
+                    giaoDichBUS.insert(IdDatCho, chonGheDTO.idKhachHang, chonGheDTO.soTaiKhoan, chonGheDTO.matKhau);
 
-                    string GiaoDichQuery = $"insert into GiaoDich values ({IdDatCho}, GETDATE(), {IdKhachHang}, '{SoTaiKhoan}', '{MatKhau}')";
-                    SqlCommand cmd2 = new SqlCommand(GiaoDichQuery, sqlConnection1);
-                    cmd2.ExecuteNonQuery();
                     ChonGhe_Load(sender, e);
-                    SoLuongVe--;
-                    if( SoLuongVe <= 0)
+                    chonGheDTO.soLuongVe--;
+                    if(chonGheDTO.soLuongVe <= 0)
                     {
                         MessageBox.Show("Đặt vé thành công");
                         this.Close();
