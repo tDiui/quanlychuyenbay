@@ -45,6 +45,7 @@ namespace BaoCaoCuoiKy
 
             dt = chonGheBUS.getDSGheNgoi();
             dataGridView1.DataSource = dt;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
            
         }
 

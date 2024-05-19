@@ -74,6 +74,7 @@ namespace BaoCaoCuoiKy
             noiHaCanhCb.SelectedIndex = 2;
             giaVeBox.Text = null;
             idChuyenBayBox.Text = null;
+            Grid1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void locDanhSachChuyenBay()

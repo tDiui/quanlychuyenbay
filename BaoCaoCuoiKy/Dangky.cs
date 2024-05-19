@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BaoCaoCuoiKy
+namespace BaoCaoCuoiKy 
 {
     public partial class Dangky : Form
     {

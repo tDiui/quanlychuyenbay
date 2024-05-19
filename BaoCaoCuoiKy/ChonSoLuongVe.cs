@@ -29,7 +29,14 @@ namespace BaoCaoCuoiKy
 
         public ChonSoLuongVe(string IdChuyenBay)
         {
-            chonVeDTO.idChuyenBay = int.Parse(IdChuyenBay);
+            try
+            {
+                chonVeDTO.idChuyenBay = int.Parse(IdChuyenBay);
+            }
+            catch(Exception ex)
+            {
+                this.Close();
+            }
             InitializeComponent();
         }
 

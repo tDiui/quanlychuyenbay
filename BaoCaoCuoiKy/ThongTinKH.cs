@@ -14,11 +14,11 @@ namespace BaoCaoCuoiKy
     public partial class ThongTinKH : Form
     {
         static string connection_string = @"Data Source=DESKTOP-JOQJAEU;Initial Catalog=qlSanBay;Integrated Security=True;";
-        
+
         public ThongTinKH()
         {
             InitializeComponent();
-            
+
         }
         private void ThongTinKH_Load(object sender, EventArgs e)
         {
@@ -74,6 +74,11 @@ namespace BaoCaoCuoiKy
         private void thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void ThongTinKH_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

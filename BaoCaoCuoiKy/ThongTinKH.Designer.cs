@@ -39,19 +39,19 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(2, 97);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Location = new Point(2, 129);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(704, 246);
+            dataGridView1.Size = new Size(805, 328);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // lammoi
             // 
-            lammoi.Location = new Point(12, 12);
+            lammoi.Location = new Point(14, 16);
+            lammoi.Margin = new Padding(3, 4, 3, 4);
             lammoi.Name = "lammoi";
-            lammoi.Size = new Size(75, 23);
+            lammoi.Size = new Size(86, 31);
             lammoi.TabIndex = 1;
             lammoi.Text = "lam moi";
             lammoi.UseVisualStyleBackColor = true;
@@ -59,9 +59,10 @@
             // 
             // them
             // 
-            them.Location = new Point(135, 12);
+            them.Location = new Point(154, 16);
+            them.Margin = new Padding(3, 4, 3, 4);
             them.Name = "them";
-            them.Size = new Size(75, 23);
+            them.Size = new Size(86, 31);
             them.TabIndex = 2;
             them.Text = "them";
             them.UseVisualStyleBackColor = true;
@@ -69,9 +70,10 @@
             // 
             // Xoa
             // 
-            Xoa.Location = new Point(460, 12);
+            Xoa.Location = new Point(526, 16);
+            Xoa.Margin = new Padding(3, 4, 3, 4);
             Xoa.Name = "Xoa";
-            Xoa.Size = new Size(75, 23);
+            Xoa.Size = new Size(86, 31);
             Xoa.TabIndex = 3;
             Xoa.Text = "Xoa";
             Xoa.UseVisualStyleBackColor = true;
@@ -79,9 +81,10 @@
             // 
             // thoat
             // 
-            thoat.Location = new Point(600, 12);
+            thoat.Location = new Point(686, 16);
+            thoat.Margin = new Padding(3, 4, 3, 4);
             thoat.Name = "thoat";
-            thoat.Size = new Size(75, 23);
+            thoat.Size = new Size(86, 31);
             thoat.TabIndex = 4;
             thoat.Text = "Thoat";
             thoat.UseVisualStyleBackColor = true;
@@ -89,17 +92,17 @@
             // 
             // ThongTinKH
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(700, 338);
+            ClientSize = new Size(800, 451);
             Controls.Add(thoat);
             Controls.Add(Xoa);
             Controls.Add(them);
             Controls.Add(lammoi);
             Controls.Add(dataGridView1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "ThongTinKH";
             Text = "ThongTinKH";
+            Load += ThongTinKH_Load_1;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

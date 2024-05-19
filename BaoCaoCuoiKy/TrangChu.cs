@@ -109,7 +109,7 @@ namespace BaoCaoCuoiKy
 
         private void DatChuyenBayBtn_Click(object sender, EventArgs e)
         {
-            DatChuyenBay datChuyenBay = new DatChuyenBay();
+            TimChuyenBay datChuyenBay = new TimChuyenBay();
             datChuyenBay.Show();
         }
     }
