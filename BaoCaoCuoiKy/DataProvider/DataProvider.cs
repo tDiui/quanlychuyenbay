@@ -16,6 +16,10 @@ namespace BaoCaoCuoiKy
         public static SqlDataAdapter adp;
         public void OpenConnection()
         {
+            if(conn.State == ConnectionState.Open)
+            {
+                return;
+            }
             try
             {
                 conn.Open();

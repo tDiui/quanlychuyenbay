@@ -63,9 +63,9 @@ namespace BaoCaoCuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap avt__3_ {
+        internal static System.Drawing.Bitmap anh_may_bay_dang_bay {
             get {
-                object obj = ResourceManager.GetObject("avt (3)", resourceCulture);
+                object obj = ResourceManager.GetObject("anh-may-bay-dang-bay", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace BaoCaoCuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ghihoten {
+        internal static System.Drawing.Bitmap anh_may_bay_dep_041752800 {
             get {
-                object obj = ResourceManager.GetObject("ghihoten", resourceCulture);
+                object obj = ResourceManager.GetObject("anh-may-bay-dep_041752800", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,29 @@ namespace BaoCaoCuoiKy.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap login {
+        internal static System.Drawing.Bitmap hinh_anh_bay_tren_troi_la_may_bay_111631532 {
             get {
-                object obj = ResourceManager.GetObject("login", resourceCulture);
+                object obj = ResourceManager.GetObject("hinh-anh-bay-tren-troi-la-may-bay_111631532", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_anh_may_bay_phan_luc {
+            get {
+                object obj = ResourceManager.GetObject("hinh-anh-may-bay-phan-luc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hinh_anh_may_bay2 {
+            get {
+                object obj = ResourceManager.GetObject("hinh-anh-may-bay2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

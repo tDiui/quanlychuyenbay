@@ -1,6 +1,6 @@
 ﻿namespace BaoCaoCuoiKy
 {
-    partial class DatChuyenBay
+    partial class TimChuyenBay
     {
         /// <summary>
         /// Required designer variable.
@@ -51,6 +51,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(1177, 582);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellContentClick;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             dataGridView1.CellFormatting += Formating;
             // 

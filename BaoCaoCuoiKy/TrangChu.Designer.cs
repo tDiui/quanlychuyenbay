@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TrangChu));
-            pictureBox1 = new PictureBox();
-            panel1 = new Panel();
-            Dangkibtn = new Button();
+            components = new System.ComponentModel.Container();
             label2 = new Label();
             label1 = new Label();
             MatKhauBox = new TextBox();
@@ -39,62 +36,17 @@
             ThoatBtn = new Button();
             DatChuyenBayBtn = new Button();
             DangNhapBtn = new Button();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(32, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 104);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // panel1
-            // 
-            panel1.BackColor = SystemColors.AppWorkspace;
-            panel1.Controls.Add(Dangkibtn);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(MatKhauBox);
-            panel1.Controls.Add(TaiKhoanBox);
-            panel1.Controls.Add(ThoatBtn);
-            panel1.Controls.Add(DatChuyenBayBtn);
-            panel1.Controls.Add(DangNhapBtn);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(194, 451);
-            panel1.TabIndex = 1;
-            // 
-            // Dangkibtn
-            // 
-            Dangkibtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            Dangkibtn.Location = new Point(13, 300);
-            Dangkibtn.Name = "Dangkibtn";
-            Dangkibtn.Size = new Size(149, 30);
-            Dangkibtn.TabIndex = 6;
-            Dangkibtn.Text = "Dăng kí Tài khoản";
-            Dangkibtn.UseCompatibleTextRendering = true;
-            Dangkibtn.UseVisualStyleBackColor = true;
-            Dangkibtn.Click += Dangkibtn_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(13, 197);
+            label2.Location = new Point(0, 197);
             label2.Name = "label2";
             label2.Size = new Size(79, 20);
             label2.TabIndex = 5;
@@ -105,7 +57,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(13, 136);
+            label1.Location = new Point(0, 149);
             label1.Name = "label1";
             label1.Size = new Size(80, 20);
             label1.TabIndex = 4;
@@ -113,25 +65,25 @@
             // 
             // MatKhauBox
             // 
-            MatKhauBox.Location = new Point(13, 224);
+            MatKhauBox.Location = new Point(116, 194);
             MatKhauBox.Name = "MatKhauBox";
-            MatKhauBox.Size = new Size(167, 27);
+            MatKhauBox.Size = new Size(204, 27);
             MatKhauBox.TabIndex = 3;
             MatKhauBox.TextChanged += textBox2_TextChanged;
             // 
             // TaiKhoanBox
             // 
-            TaiKhoanBox.Location = new Point(13, 165);
+            TaiKhoanBox.Location = new Point(116, 142);
             TaiKhoanBox.Name = "TaiKhoanBox";
-            TaiKhoanBox.Size = new Size(168, 27);
+            TaiKhoanBox.Size = new Size(204, 27);
             TaiKhoanBox.TabIndex = 2;
             // 
             // ThoatBtn
             // 
             ThoatBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            ThoatBtn.Location = new Point(3, 396);
+            ThoatBtn.Location = new Point(688, 12);
             ThoatBtn.Name = "ThoatBtn";
-            ThoatBtn.Size = new Size(185, 41);
+            ThoatBtn.Size = new Size(100, 30);
             ThoatBtn.TabIndex = 1;
             ThoatBtn.Text = "Thoát";
             ThoatBtn.UseVisualStyleBackColor = true;
@@ -140,9 +92,9 @@
             // DatChuyenBayBtn
             // 
             DatChuyenBayBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DatChuyenBayBtn.Location = new Point(3, 349);
+            DatChuyenBayBtn.Location = new Point(258, 264);
             DatChuyenBayBtn.Name = "DatChuyenBayBtn";
-            DatChuyenBayBtn.Size = new Size(185, 41);
+            DatChuyenBayBtn.Size = new Size(100, 30);
             DatChuyenBayBtn.TabIndex = 1;
             DatChuyenBayBtn.Text = "Đặt chuyến bay";
             DatChuyenBayBtn.UseVisualStyleBackColor = true;
@@ -151,7 +103,7 @@
             // DangNhapBtn
             // 
             DangNhapBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DangNhapBtn.Location = new Point(43, 264);
+            DangNhapBtn.Location = new Point(0, 264);
             DangNhapBtn.Name = "DangNhapBtn";
             DangNhapBtn.Size = new Size(100, 30);
             DangNhapBtn.TabIndex = 1;
@@ -160,46 +112,29 @@
             DangNhapBtn.UseVisualStyleBackColor = true;
             DangNhapBtn.Click += DangNhapBtn_Click;
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(200, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(290, 209);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Image = Properties.Resources.anh_may_bay_dang_bay;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(800, 450);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox2_Click;
             // 
-            // pictureBox3
+            // button1
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(496, 0);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(298, 209);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(200, 215);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(290, 236);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 2;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(496, 215);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(298, 236);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 2;
-            pictureBox5.TabStop = false;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button1.Location = new Point(129, 264);
+            button1.Name = "button1";
+            button1.Size = new Size(100, 30);
+            button1.TabIndex = 7;
+            button1.Text = "Đăng kí";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // TrangChu
             // 
@@ -207,33 +142,26 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(panel1);
+            Controls.Add(button1);
+            Controls.Add(ThoatBtn);
+            Controls.Add(MatKhauBox);
+            Controls.Add(DatChuyenBayBtn);
+            Controls.Add(label2);
+            Controls.Add(DangNhapBtn);
+            Controls.Add(label1);
+            Controls.Add(TaiKhoanBox);
+            Controls.Add(pictureBox1);
             MaximizeBox = false;
             Name = "TrangChu";
+            ShowInTaskbar = false;
             Text = "Đăng nhập hệ thống";
-            Load += RegisterForm_Load;
+            Load += TrangChu_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private Panel panel1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
         private Button ThoatBtn;
         private Button DatChuyenBayBtn;
         private Button DangNhapBtn;
@@ -241,6 +169,8 @@
         private Label label1;
         private TextBox MatKhauBox;
         private TextBox TaiKhoanBox;
-        private Button Dangkibtn;
+        private PictureBox pictureBox1;
+        private Button button1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

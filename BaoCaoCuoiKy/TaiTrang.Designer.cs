@@ -1,6 +1,6 @@
 ﻿namespace BaoCaoCuoiKy
 {
-    partial class LoginForm
+    partial class TaiTrang
     {
         /// <summary>
         /// Required designer variable.

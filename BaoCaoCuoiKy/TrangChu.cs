@@ -15,16 +15,33 @@ namespace BaoCaoCuoiKy
 {
     public partial class TrangChu : Form
     {
+        private int currentImageIndex = 0;
+        static string path = Application.StartupPath + "../../../"; //không thay đổi cái path này nhaaa
+        private string[] imagePaths = { @$"{path}\Resources\anh-may-bay-dang-bay.jpg", @$"{path}\Resources\hinh-anh-bay-tren-troi-la-may-bay_111631532.jpg", @$"{path}\Resources\anh-may-bay-dep_041752800.jpg", @$"{path}\Resources\hinh-anh-may-bay-phan-luc.jpg" };
         QuanTriDTO quanTriDTO = new QuanTriDTO();
         QuanTriBUS quanTriBUS = new QuanTriBUS();
         //SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
+        //SqlConnection conn = newSqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
         public TrangChu()
         {
             InitializeComponent();
-        }
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Để ảnh hiển thị đầy đủ trong PictureBox
+            timer1.Interval = 5000; // 5 giây
+            timer1.Tick += Timer_Tick;
 
-        private void RegisterForm_Load(object sender, EventArgs e)
+            timer1.Start();
+        }
+        private void Timer_Tick(object? sender, EventArgs e)
         {
+            // Chuyển đổi ảnh
+            currentImageIndex = (currentImageIndex + 1) % imagePaths.Length;
+            pictureBox1.ImageLocation = imagePaths[currentImageIndex];
+        }
+        private void TrangChu_Load(object sender, EventArgs e)
+        {
+            // Đặt ảnh ban đầu
+            pictureBox1.ImageLocation = imagePaths[currentImageIndex];
+            this.ControlBox = false;
             MatKhauBox.PasswordChar = '*';
         }
 
@@ -60,11 +77,7 @@ namespace BaoCaoCuoiKy
         }
 
         //Chỉ edit chô này thôi nha
-        private void DatChuyenBayBtn_Click(object sender, EventArgs e)
-        {
-            DatChuyenBay datChuyenBay = new DatChuyenBay();
-            datChuyenBay.Show();
-        }
+
 
         //bên dưới này để nguyên
 
@@ -83,15 +96,21 @@ namespace BaoCaoCuoiKy
 
         }
 
-        private void Dangkibtn_Click(object sender, EventArgs e)
-        {
-            Register registerForm = new Register();
-            registerForm.ShowDialog();
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Dangky dangky = new Dangky();
+            dangky.ShowDialog();
+        }
+
+        private void DatChuyenBayBtn_Click(object sender, EventArgs e)
+        {
+            DatChuyenBay datChuyenBay = new DatChuyenBay();
+            datChuyenBay.Show();
         }
     }
 }

@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace BaoCaoCuoiKy
 {
-    public partial class DatChuyenBay : Form
+    public partial class TimChuyenBay : Form
     {
         DatChuyenBayDTO datChuyenBayDTO = new DatChuyenBayDTO();
         DatChuyenBayBUS dcbBUS = new DatChuyenBayBUS();
         SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True");
         ChuyenBayDAO chuyenBayDAO = new ChuyenBayDAO();
         DataTable chuyenBayGrid = new DataTable();
-        public DatChuyenBay()
+        public TimChuyenBay()
         {
             InitializeComponent();
         }
@@ -52,13 +52,8 @@ namespace BaoCaoCuoiKy
             DiemDenPick.DataSource = DiemDen;
 
 
-            string query = "select * from chuyenbay";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            List<string> ls = new List<string>();
-            conn.Open();
-            SqlDataAdapter data = new SqlDataAdapter(cmd);
-            DataTable db = new DataTable();
-            data.Fill(db);
+            DataTable dsChuyenBay = chuyenBayDAO.getDSChuyenBay();
+            dataGridView1.DataSource = dsChuyenBay;
 
         }
 
@@ -105,8 +100,16 @@ namespace BaoCaoCuoiKy
                 // Retrieve the value of the clicked cell
                 var idChuyenBay = dataGridView1.Rows[e.RowIndex].Cells[0].Value;
                 ChonSoLuongVe chonSoLuongVe = new ChonSoLuongVe(idChuyenBay.ToString());
-                chonSoLuongVe.Show();
-                this.Hide();
+                try
+                {
+                    chonSoLuongVe.Show();
+                    this.Hide();
+                }
+                catch (Exception ex)
+                {
+                    //nothing
+                }
+                
                 chonSoLuongVe.Closed += MoForm;
                 // Display the value (for demonstration)
             }
