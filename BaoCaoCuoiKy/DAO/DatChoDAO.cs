@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaoCaoCuoiKy
+namespace BaoCaoCuoiKy.DAO
 {
     internal class DatChoDAO
     {
@@ -16,7 +16,7 @@ namespace BaoCaoCuoiKy
             data.executeNonQuery(query);
         }
 
-        public int getIdDatCho() 
+        public int getIdDatCho()
         {
             string Support_query = $"Select IdDatCho from DatCho ORDER BY IdDatCho DESC";
             int idDatCho = (int)data.executeScalar(Support_query);

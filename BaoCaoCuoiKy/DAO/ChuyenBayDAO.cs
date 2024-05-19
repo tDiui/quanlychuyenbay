@@ -93,5 +93,28 @@ namespace BaoCaoCuoiKy
             var soLuongVe = data.executeScalar(query);
             return (int)soLuongVe;
         }
+
+        public DataTable getDSChuyenBayTheoFilter(int IdChuyenBay, string NoiKhoiHanh, string NoiHaCanh, float GiaVe)
+        {
+            string query = "select * from ChuyenBay where";
+            //string queryIdChuyenBay = "", queryNoiKhoiHanh = "", queryNoiHaCanh = "", queryGiaVe = "";
+            if(IdChuyenBay != null)
+            {
+                query += $" IdChuyenBay = {IdChuyenBay} AND";
+            }
+            if (NoiHaCanh != "None")
+            {
+                query += $" NoiKHoiHanh = '{NoiKhoiHanh}' AND";
+            }
+            if (NoiHaCanh != "None")
+            {
+                query += $" NoiHaCanh = '{NoiHaCanh}' AND";
+            }
+            if (GiaVe != null)
+            {
+                query += $" GiaVe < {GiaVe}";
+            }
+            return data.executeQuery(query);
+        }
     }
 }

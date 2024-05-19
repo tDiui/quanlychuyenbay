@@ -131,7 +131,6 @@
             DiemDiPick.Name = "DiemDiPick";
             DiemDiPick.Size = new Size(132, 28);
             DiemDiPick.TabIndex = 6;
-            DiemDiPick.SelectedIndexChanged += DiemDiPick_SelectedIndexChanged;
             // 
             // KhuHoiPick
             // 
