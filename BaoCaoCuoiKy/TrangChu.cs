@@ -103,7 +103,7 @@ namespace BaoCaoCuoiKy
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Dangky dangky = new Dangky();
+            Register dangky = new Register();
             dangky.ShowDialog();
         }
 

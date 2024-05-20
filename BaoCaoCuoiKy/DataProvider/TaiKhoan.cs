@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BaoCaoCuoiKy.DataProvider
+namespace BaoCaoCuoiKy.DataProviders
 {
     internal class TaiKhoan
     {

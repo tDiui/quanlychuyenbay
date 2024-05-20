@@ -1,4 +1,4 @@
-namespace BaoCaoCuoiKy.DataProvider
+namespace BaoCaoCuoiKy.Data
 {
     internal static class Program
     {

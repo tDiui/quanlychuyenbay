@@ -63,10 +63,6 @@ namespace BaoCaoCuoiKy
             currentImageIndex = (currentImageIndex + 1) % imagePaths.Length;
             pictureBox1.ImageLocation = imagePaths[currentImageIndex];
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
         
     }
 }

@@ -10,7 +10,7 @@ namespace BaoCaoCuoiKy
 {
     internal class DataProvider
     {
-        public static string connection_string = @"Data Source=LAPTOP-C49CHQEH\SQLEXPRESS;Initial Catalog=qlSanBay;Integrated Security=True";
+        public static string connection_string = @"Data Source=DESKTOP-JTO2V7H;Initial Catalog=qlSanBay;Integrated Security=True;TrustServerCertificate=True";
         public static SqlConnection conn = new SqlConnection(connection_string);
         public static SqlCommand cmd;
         public static SqlDataAdapter adp;

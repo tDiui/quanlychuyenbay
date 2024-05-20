@@ -74,7 +74,7 @@ namespace BaoCaoCuoiKy
 
 
             // Kiểm tra khoảng cách giữa các từ và độ dài họ tên
-            string[] words = hoTen.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            string[] words = hoTen.Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries);
             for (int i = 0; i < words.Length; i++)
             {
                 int spaceCount = 0;
@@ -104,11 +104,12 @@ namespace BaoCaoCuoiKy
                 return;
             }
 
-            if (!taiKhoan.Any(char.IsDigit) || !taiKhoan.Any(char.IsLetter) || taiKhoan.Any(ch => !char.IsLetterOrDigit(ch)) || taiKhoan.Length < 6)
+            if (!taiKhoan.Any(char.IsDigit) /* || !taiKhoan.Any(char.IsLetter) || taiKhoan.Any(ch => !char.IsLetterOrDigit(ch))  */)
             {
-                MessageBox.Show("Tên tài khoản phải chứa ít nhất một chữ cái và một chữ số, không chứa kí tự đặc biệt.");
+                MessageBox.Show("Vui lòng nhập chính xác số CMND.");
                 return;
             }
+            /*
             if (matKhau.Length < 8 && !matKhau.All(char.IsLower) && !matKhau.All(char.IsDigit))
             {
                 MessageBox.Show("Mật khẩu phải có ít nhất 8 ký tự và chỉ chứa chữ số và chữ thường.");
@@ -119,6 +120,7 @@ namespace BaoCaoCuoiKy
                 MessageBox.Show("Tài khoản không được giống với mật khẩu.");
                 return;
             }
+            */
             string xacNhanMatKhau = XacnhanMatKhau_textbox.Text; // lữu trữ chuỗi xác nhận mật khẩu é :))
             if (matKhau != xacNhanMatKhau)
             {
@@ -130,7 +132,7 @@ namespace BaoCaoCuoiKy
 
 
             // Tạo câu truy vấn SQL chèn dữ liệu vào bảng QuanTri
-            string query = string.Format("INSERT INTO QuanTri (TenNV, TaiKhoan, MatKhau) VALUES (N'{0}', N'{1}', N'{2}')", hoTen, taiKhoan, matKhau);
+            string query = $"INSERT INTO KhachHang(HoTen, CMND, MatKhau) Values( '{hoTen}', '{taiKhoan}', '{matKhau}')";
 
             DataProvider dataProvider = new DataProvider();
             dataProvider.OpenConnection();
