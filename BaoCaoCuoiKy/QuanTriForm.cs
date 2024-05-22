@@ -27,11 +27,24 @@ namespace BaoCaoCuoiKy
 
         public void getData()
         {
-            
-            chuyenBayDTO.IdChuyenBay = int.Parse(idChuyenBayBox.Text);
+            try
+            {
+                chuyenBayDTO.IdChuyenBay = int.Parse(idChuyenBayBox.Text);
+            }catch (Exception ex)
+            {
+                chuyenBayDTO.IdChuyenBay = -1;
+            }
+            try
+            {
+                chuyenBayDTO.GiaVe = int.Parse(giaVeBox.Text);
+            }
+            catch (Exception ex)
+            {
+                chuyenBayDTO.GiaVe = -1;
+            }
+
             chuyenBayDTO.NoiKhoiHanh = noiKhoiHanhCb.Text;
             chuyenBayDTO.NoiHaCanh = noiHaCanhCb.Text;
-            chuyenBayDTO.GiaVe = int.Parse(giaVeBox.Text);
             chuyenBayBUS.info = chuyenBayDTO;
         }
 

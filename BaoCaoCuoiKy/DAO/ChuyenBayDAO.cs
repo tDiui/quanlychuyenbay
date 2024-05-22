@@ -33,7 +33,7 @@ namespace BaoCaoCuoiKy
 
         public void delete(int IdChuyenBay)
         {
-            string query = $"DELETE FROM QuanTri WHERE MaNV = {IdChuyenBay}";
+            string query = $"DELETE FROM QuanTri WHERE MaNV = {IdChuyenBay}";   
             data.executeNonQuery(query);
         }
 
@@ -94,26 +94,45 @@ namespace BaoCaoCuoiKy
             return (int)soLuongVe;
         }
 
+        public string daCoDungTruoc(bool flag)
+        {
+            if (flag)
+            {
+                return " AND";
+            }
+            else
+            {
+                return "";
+            }
+
+        }
+
         public DataTable getDSChuyenBayTheoFilter(int IdChuyenBay, string NoiKhoiHanh, string NoiHaCanh, float GiaVe)
         {
             string query = "select * from ChuyenBay where";
+            bool flag = false;
             //string queryIdChuyenBay = "", queryNoiKhoiHanh = "", queryNoiHaCanh = "", queryGiaVe = "";
-            if(IdChuyenBay != null)
+            if(IdChuyenBay > -1)
             {
-                query += $" IdChuyenBay = {IdChuyenBay} AND";
+                query += $" IdChuyenBay = {IdChuyenBay}";
+                flag = true;
+            }
+            if (NoiKhoiHanh != "None")
+            {
+                query += $"{daCoDungTruoc(flag)}" + $" NoiKHoiHanh = '{NoiKhoiHanh}'";
+                flag = true;
             }
             if (NoiHaCanh != "None")
             {
-                query += $" NoiKHoiHanh = '{NoiKhoiHanh}' AND";
+                query += $"{daCoDungTruoc(flag)}" + $" NoiHaCanh = '{NoiHaCanh}'";
+                flag = true;
             }
-            if (NoiHaCanh != "None")
+            if (GiaVe > -1)
             {
-                query += $" NoiHaCanh = '{NoiHaCanh}' AND";
+                query += $"{daCoDungTruoc(flag)}" + $" GiaVe < {GiaVe}";
+                flag = true;
             }
-            if (GiaVe != null)
-            {
-                query += $" GiaVe < {GiaVe}";
-            }
+            query += "";
             return data.executeQuery(query);
         }
     }
